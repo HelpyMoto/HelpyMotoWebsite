@@ -33,7 +33,7 @@ const Navbar = () => {
             isMobile ? "mobile-nav" : ""
           }`}
         >
-          <a className="navbar-brand" to="/">
+          <a className="navbar-brand" href="/">
             {" "}
             <img
               src={Logo}

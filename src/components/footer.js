@@ -149,4 +149,4 @@ const footer = () => {
   )
 }
 
-export default footer;e
+export default footer;

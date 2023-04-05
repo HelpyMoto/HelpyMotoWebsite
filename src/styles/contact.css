@@ -1,0 +1,24 @@
+#contact{
+    background-color: #5D5FEF;
+    height: 750px;
+    color: white;
+    padding-top: 20px;
+    
+}
+
+.about_navbar_link{
+    
+    color: white;
+    
+    margin-left: 100px;
+    text-decoration: none;
+
+}
+#about_navbar_items{
+    padding-top: 15px;
+    
+    margin-left: 400px;
+}
+.about_navbar{
+    display: flex;
+}

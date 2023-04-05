@@ -1,0 +1,148 @@
+#service {
+
+    /* background-color: #7d7FF2; */
+    background-color: #E8E8FD;
+        
+    /* background-color: white; */
+    height: 100%;
+    /* color: white; */
+    color: rgb(255, 143, 99);
+    background-color: #5D5FEF;
+    text-align: center;
+
+
+}
+
+.periodic_service {
+
+    height: 500px;
+    display: flex;
+}
+
+.periodic_service_item {
+    background-color: white;
+    /* color: #5d5FEF; */
+    color: gray;
+
+    width: 20%;
+    margin-left: 3%;
+    height: 80%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: x-large;
+    text-align: center;
+    text-align: left;
+    padding-left: 20px;
+    /* border: 10px solid #5d5FEF; */
+}
+.periodic_service_item > li{
+    font-size: medium;
+    color: black;
+}
+.tyres_service {
+    height: 700px;
+    
+
+}
+
+.tyre_included, .custom_service ,.brake_maintenance,.service_package,.ac_fitment,.radiator,.spa,.clutch,.suspension{
+    display: flex;
+    width: 100%;
+}
+.tyre_service_first_item > li{
+    font-size: medium;
+    color: black;
+}
+.tyre_service_first_item, .service_package_item{
+    width: 30%;
+    margin-left: 15%;
+    height: 300px;
+    background-color: white;
+    /* color: #5d5FEF; */
+    color: gray;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: x-large;
+    text-align: left;
+    padding-left: 20px;
+    /* border: 10px solid #5d5FEF; */
+}
+.tyre_included_item{
+    width: 15%;
+    margin-left: 14%;
+    height: 300px;
+    background-color: white;
+    /* color: #5d5FEF; */
+    color: gray;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: x-large;
+    text-align: center;
+    /* border: 10px solid #5d5FEF; */
+
+}
+.custom_service_item, .brake_maintanence_item,.spa_item,.suspension_item{
+    width: 15%;
+    margin-left: 8%;
+    height: 300px;
+    background-color: white;
+    /* color: #5d5FEF; */
+    color: gray;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: x-large;
+    text-align: center;
+    /* border: 10px solid #5d5FEF; */
+
+}
+.ac_fitments_item, .clutch_item{
+    width: 12%;
+    margin-left: 4%;
+    height: 300px;
+    background-color: white;
+    /* color: #5d5FEF; */
+    color: gray;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: x-large;
+    text-align: center;
+    /* border: 10px solid #5d5FEF; */
+
+}
+
+.radiator_item{
+    width: 15%;
+    margin-left: 14%;
+    height: 300px;
+    background-color: white;
+    /* color: #5d5FEF; */
+    color: gray;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: x-large;
+    text-align: center;
+    /* border: 10px solid #5d5FEF; */
+
+}
+.sunroof_service, .inspection_service{
+    width: 35%;
+    margin-left: 30%;
+    height: 300px;
+    background-color: white;
+    /* color: #5d5FEF; */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: x-large;
+    text-align: center;
+    /* border: 10px solid #5d5FEF;
+    color: gray;
+     */
+     color: gray;
+}
+.home_delivery_item{
+    width: 15%;
+    margin-left: 4%;
+    height: 300px;
+    background-color: white;
+    /* color: #5d5FEF; */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: x-large;
+    text-align: center;
+    /* border: 10px solid #5d5FEF; */
+    color: gray;
+
+
+}

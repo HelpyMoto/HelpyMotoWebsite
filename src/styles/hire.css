@@ -1,0 +1,62 @@
+.hire{
+    color: #5D5FEF;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.hire_container{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: auto;
+    width: 50%;
+    /* padding: 20px; */
+    color: black;
+    height: 700px;
+    padding-top: 50px;
+    text-align: center;
+}
+.hire_form_control{
+    width: 60%;
+    margin-left: 20%;
+}
+.hire_btn{
+    width: 60%;
+   
+
+}
+.error{
+    color: red;
+}
+@media only screen and (max-width: 400px) {
+    .hire{
+        color: #5D5FEF;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .hire_container{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin: auto;
+        width: 50%;
+        /* padding: 20px; */
+        color: black;
+        height: 550px;
+        padding-top: 50px;
+        text-align: center;
+        font-size: 10px;
+        
+        
+    }
+    .hire_container h4{
+        font-size: small;
+    }
+    .hire_form_control{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .hire_btn{
+        width: 60%;
+       
+    
+    }
+
+}

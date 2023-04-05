@@ -1,0 +1,13 @@
+.service_payment{
+    text-align: center;
+    color: #5D5FEF;
+}
+.payment_card{
+
+    width: 40%;
+    height: 400px;
+    margin-left: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: black;
+    font-size: xx-large;
+}

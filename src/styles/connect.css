@@ -1,0 +1,108 @@
+.connect{
+    width: 90%;
+    margin-left: 5%;
+    background-color: #888FD1;
+    border-radius: 20px;
+    height: 600px;
+    margin-bottom: 10%;
+    z-index: 3;
+}
+
+.connect .circle{
+    position: relative;
+    top: -65px;
+    background-color: #7D7FF2;
+    width: 150px;
+    left: 100px;
+    height: 150px;
+    border-radius: 1000px;
+    color: white;
+    font-size: 200px;
+    z-index: 6;
+}
+.connect_container{
+    display: flex;
+}
+.connect_text{
+    color: white;
+}
+.connect_text h1,h3{
+    width: 240px;
+    margin-left: 50px;
+
+}
+.connect_cards{
+    display: flex;
+
+    
+    width: 70%;
+    height: 350px;
+    margin-left: 150px;
+    font-size: small;
+}
+.connect_card img{
+    width: 99%;
+    margin-top: 1%;
+    border-radius: 20px;
+}
+.connect_card{
+    margin-left: 3%;
+    width: 30%;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 420px) {
+    .connect{
+        width: 90%;
+        margin-left: 5%;
+        background-color: #888FD1;
+        border-radius: 20px;
+        height: 600px;
+        margin-bottom: 10%;
+        z-index: 3;
+        font-size: 5px;
+    }
+    
+    .connect .circle{
+        position: relative;
+        top: -25px;
+        background-color: #7D7FF2;
+        width: 50px;
+        left: 60px;
+        height: 50px;
+        border-radius: 1000px;
+        color: white;
+        font-size: 50px;
+        z-index: 6;
+    }
+    .connect_container{
+        display: flex;
+    }
+    .connect_text{
+        color: white;
+    }
+    .connect_text h1,h3{
+        width: 240px;
+        margin-left: 50px;
+    
+    }
+    .connect_cards{
+        display: flex;
+    
+        
+        width: 70%;
+        height: 350px;
+        margin-left: 150px;
+    }
+    .connect_card{
+        margin-left: 3%;
+        width: 30%;
+        height: 350px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    
+    
+}

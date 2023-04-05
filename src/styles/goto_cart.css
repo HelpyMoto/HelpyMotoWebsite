@@ -1,0 +1,208 @@
+.goto_cart_box {
+    color: #5D5FEF;
+    width: 100%;
+
+    background-color: white;
+    position: fixed;
+
+
+
+    /* margin-left: 10%; */
+    margin-top: 5%;
+
+
+
+}
+.goto_cart_card{
+    width: 80%;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+    margin-left: 10%;
+    border-radius: 20px;
+    text-align: center;
+    overflow: auto;
+    height: 600px;
+    
+}
+
+.gotocart_item {
+    height: 60px;
+    width: 80%;
+    margin-left: 10%;
+    border: 2px solid gray;
+    color: black;
+    margin-top: 2%;
+    border-radius: 5px;
+    text-align: left;
+    justify-content: left;
+    font-size: x-large;
+    padding-bottom: 1%;
+
+    /* box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2); */
+    display: flex;
+    /* position: absolute;
+    right: 500px; */
+}
+.gotocart_btn{
+    height: fit-content;
+    width: 20%;
+    margin-top: 5%;
+    color: black;
+    background-color: white;
+    border: solid 2px #5D5FEF;
+    border-radius: 20px;
+    margin-bottom: 300px;
+    margin-left: 55%;
+    text-align: left;
+    padding-left: 50px;
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+}
+
+.gotocart_btn:hover{
+    color: white;
+    background-color:#5D5FEF;
+    height: 60px;
+    width: 25%;
+    transition: 0.3s;
+    text-align: center;
+
+
+
+}
+.subtotal_cart > h2{
+    
+    display:flex;
+    margin-left:12%;
+    font-size: xx-large;
+    width: fit-content;
+}
+
+
+.gotocart_item_btn{
+    background-color: red;
+    color: white;
+    border: 1px solid gray;
+    font-size:large;
+    border-radius:20px;
+    height:40px;
+    width:40px;
+}
+
+.gotocart_item_btn:hover{
+    background-color: lightcoral;
+    color: white;
+    border: 1px solid gray;
+    font-size:large;
+    border-radius:20px;
+    height:40px;
+    width:40px;
+}
+@media only screen and (max-width: 1090px) {
+    .gotocart_item {
+        height: 60px;
+        width: 80%;
+        margin-left: 10%;
+        border: 2px solid gray;
+        color: black;
+        margin-top: 2%;
+        border-radius: 5px;
+        text-align: left;
+        justify-content: left;
+        font-size: large;
+        padding-bottom: 1%;
+    
+        /* box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2); */
+        display: flex;
+        /* position: absolute;
+        right: 500px; */
+    }
+    .gotocart_btn{
+        height: 50px;
+        width: 20%;
+        margin-top: 5%;
+        color: black;
+        background-color: white;
+        border: solid 2px #5D5FEF;
+        border-radius: 20px;
+        margin-bottom: 300px;
+        margin-left: 55%;
+        /* padding: 10px;
+        text-align: left;
+        padding-left: 10%; */
+        text-align: center;
+        font-size: large;
+    }
+    
+    .gotocart_btn:hover{
+        color: white;
+        background-color:#5D5FEF;
+        height: 60px;
+        width: 25%;
+        transition: 0.3s;
+        text-align: center;
+    
+    
+    
+    }
+    .subtotal_cart > h2{
+        font-size: medium;
+    }
+
+
+
+}
+@media only screen and (max-width: 520px) {
+    .gotocart_item {
+        height: fit-content;
+        width: 80%;
+        margin-left: 10%;
+        border: 2px solid gray;
+        color: black;
+        margin-top: 2%;
+        border-radius: 5px;
+        text-align: left;
+        justify-content: left;
+        font-size: small;
+        padding-bottom: 1%;
+    
+        /* box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2); */
+        display: flex;
+        /* position: absolute;
+        right: 500px; */
+    }
+    .gotocart_btn{
+        height: 50px;
+        width: fit-content;
+        margin-top: 5%;
+        color: black;
+        background-color: white;
+        border: solid 2px #5D5FEF;
+        border-radius: 20px;
+        margin-bottom: 300px;
+        margin-left: 45%;
+        /* padding: 10px;
+        text-align: left;
+        padding-left: 10%; */
+        text-align: center;
+        font-size: small;
+    }
+    
+    .gotocart_btn:hover{
+        color: white;
+        background-color:#5D5FEF;
+        height: 60px;
+        width: 25%;
+        transition: 0.3s;
+        text-align: center;
+    
+    
+    
+    }
+    .subtotal_cart > h2{
+        font-size: medium;
+    }
+
+
+
+}

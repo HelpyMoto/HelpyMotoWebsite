@@ -1,0 +1,137 @@
+.service_tracking{
+    text-align: center;
+    margin-top: 2%;
+    color: #5D5FEF;
+}
+.service_tracking_item{
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+    width: 40%;
+    margin-left: 30%;
+    height: 80px;
+    margin-top: 30px;
+    display: flex;
+    color: black;
+    padding: 20px;
+}
+.service_tracking_data{
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+    width: 40%;
+    margin-left: 30%;
+    /* height: 200px; */
+    margin-top: 30px;
+    border: 2px solid black;
+    color: black;
+    padding: 20px;
+    text-align: left;
+
+}
+.service_tracking_item_btn{
+    
+    height: 30px;
+    margin-left: 45%;
+    background-color: #5D5FEF;
+    color: aliceblue;
+    border:none;
+    border-radius: 5px;
+    position: absolute;
+    right: 500px;
+
+}
+.tracking_part_id{
+    height: 280px;
+    width: 40%;
+    box-shadow: 4px 4px 4px 4px rgb(0,0,0,0.2);
+    margin-left: 30%;
+    margin-top: 3%;
+    border-radius: 5px;
+    /* padding: 40px; */
+    text-align: center;
+    padding-top: 40px;
+}
+.tracking_steps{
+    width:400px;
+    height:250px;
+    border: 2px solid gray;
+    border-radius: 25px;
+    margin-left: 5%;
+    padding: 20px;
+    
+}
+.tracking_line12{
+    height: 180px;
+    width: 5px;
+    background-color: #5D5FEF;
+    position: absolute;
+    right: 980px;
+    top: 520px;
+
+}
+.tracking_line23{
+    height: 180px;
+    width: 5px;
+    background-color: #5D5FEF;
+    position: absolute;
+    right: 980px;
+    top: 791px;
+
+}
+.tracking_line34{
+
+    height: 180px;
+    width: 5px;
+    background-color: #5D5FEF;
+    position: absolute;
+    right: 980px;
+    top: 1066px;
+
+}
+.tracking_line45{
+    height: 180px;
+    width: 5px;
+    background-color: #5D5FEF;
+    position: absolute;
+    right: 980px;
+    top: 1345px;
+
+}.tracking_line56{
+    height: 180px;
+    width: 5px;
+    background-color: #5D5FEF;
+    position: absolute;
+    right: 980px;
+    top: 1619px;
+
+}.tracking_line67{
+    height: 180px;
+    width: 5px;
+    background-color: #5D5FEF;
+    position: absolute;
+    right: 980px;
+    top: 1893px;
+
+}.tracking_line78{
+    height: 180px;
+    width: 5px;
+    background-color: #5D5FEF;
+    position: absolute;
+    right: 980px;
+    top: 2166px;
+
+}.tracking_line89{
+    height: 180px;
+    width: 5px;
+    background-color: #5D5FEF;
+    position: absolute;
+    right: 980px;
+    top: 2440px;
+
+}
+/* .tracking_lineext{
+    height: 180px;
+    width: 5px;
+    background-color: #5D5FEF;
+    position: absolute;
+    right: 980px;
+    top: 2420px;
+
+} */

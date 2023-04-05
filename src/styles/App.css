@@ -1,0 +1,122 @@
+.helpymoto-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px;
+    
+  }
+  
+  .helpymoto-title {
+    text-align: center;
+    font-size: 10px !important;
+    font-weight: bold;
+    color: black;
+    animation: helpymoto-pulse 1s ease-in-out infinite;
+  }
+  
+  .helpymoto-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .helpymoto-image {
+    padding: 30px;
+    width: 22%;
+  }
+  
+  .helpymoto-image img {
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: 80%; /* reduce the height to 80% of the container height */
+    filter: brightness(120%); /* decrease the contrast by 20% */
+  }
+  
+  .helpymoto-text {
+    padding: 10px;
+    width: 50%;
+  }
+  
+  .helpymoto-text p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .helpymoto-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .helpymoto-buttons img {
+    height: 50px;
+    cursor: pointer;
+    margin: 0px 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .helpymoto-content {
+      flex-direction: column;
+      align-items: center; /* center the content vertically */
+    }
+  
+    .helpymoto-image,
+    .helpymoto-text {
+      width: 100%;
+      margin-top: -50px;
+      margin-bottom:30px; /* add some space between the image and the text */
+    }
+  
+    .helpymoto-image img {
+      height: 50% !important; /* reduce the height of the image */
+    }
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .helpymoto-title {
+      font-size: 24px;
+    }
+    
+    .helpymoto-text p {
+      font-size: 16px;
+    }
+    
+    .helpymoto-buttons img {
+      height: 40px;
+    }
+  }
+  
+  @keyframes helpymoto-pulse {
+    0% {
+      transform: scale(1);
+    }
+    
+    50% {
+      transform: scale(1.1);
+    }
+    
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .helpymoto-image img,
+  .helpymoto-text p,
+  .helpymoto-buttons img {
+    animation: helpymoto-fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes helpymoto-fadeIn {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,15 @@
+.cart_box{
+    background-color: white;
+    color: black;
+
+    width: 20%;
+
+    position: fixed;
+    
+    margin-left: 70%;
+    margin-top: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding-bottom: 10px;
+
+}

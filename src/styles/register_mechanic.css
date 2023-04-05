@@ -1,0 +1,58 @@
+.register_first{
+    width: 30%;
+    
+    height: 760px;
+}
+.register_second{
+    width: 70%;
+    
+    height: 760px;
+}
+.register_mechanic{
+    display: flex;
+    
+}
+.register_head1{
+    margin-left: 25%;
+    margin-top: 10%;
+    color: #5D5FEF;
+}
+.register_head2{
+    margin-left: 10%;
+    width: 300px;
+    color: #5D5FEF;
+}
+.register_first_btn{
+
+    width: 90%;
+    margin-left: 5%;
+}
+.register_mechanic_card{
+    margin-top: 5%;
+    width: 60%;
+    height: 90%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin-left: 25%;
+    border-radius: 20px;
+}
+.register_mechanic_card Link{
+    background-color: red;
+}
+.register_mechanic_flex1{
+    display: flex;
+    margin-left: 8%;
+    color: #5D5FEF;
+}
+.register_mechanic_flex1 p{
+
+    margin-left: 10%;
+    color: black;
+}
+.register_mechanic_flex2{
+    width: 90%;
+    margin-left: 5%;
+    
+}
+.register_second_btn{
+    margin-left: 10%;
+}

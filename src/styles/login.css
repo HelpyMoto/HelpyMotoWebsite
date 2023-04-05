@@ -1,0 +1,104 @@
+.page{
+    box-shadow: 4px 4px 8px 4px gray;
+    width: 35%;
+    height: 750px;
+    
+
+    border-radius: 20px;
+    text-align: left;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 8%;
+    
+    
+    
+}
+.page .container{
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 10%;
+
+
+}
+/* .page .container Button{
+    width: 100%;
+    border-radius: 20px;
+} */
+.flexing{
+    display: flex;
+
+}
+.flexing a{
+    color: lightskyblue;
+    margin-left: 200px;
+    
+}
+
+.page .container h2{
+    color: #5D5FEF;
+}
+
+.heading1{
+    width: 20%;
+    margin-top: 3%;
+    margin-left: 15%;
+    color: #5D5FEF;
+}
+.heading2{
+    width: 40%;    
+
+    margin-left: 8%;
+    color: #5D5FEF;
+    
+}
+
+.heading3{
+    width: 50%;
+    
+    margin-left: 10%;
+    text-align: left;
+}
+
+.first_container{
+    
+    width: 50%;
+}
+/* Button{
+    width: 60%;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 60%;
+    margin-left: 15%;
+    
+} */
+.form_text{
+    display: flex;
+}
+.form_text p{
+    color: gray;
+    margin-left: 5%;
+
+}
+.form_text a{
+    
+    margin-left: 40%;
+
+}
+.form_text2{
+    display: flex;
+    text-align: center;
+
+    justify-content: center;
+}
+.page .container .social_media_btn{
+    color: black;
+}
+.back_role_btn{
+    background-color: rgb(0, 144, 255);
+    color: white;
+    position: relative;
+    top: 500px;
+    margin-left: 100px;
+    width: 400px;
+    border-radius: 15px;
+}

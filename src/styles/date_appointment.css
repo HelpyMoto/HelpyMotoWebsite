@@ -1,0 +1,57 @@
+.select_date_service{
+    text-align: center;
+    color: #5D5FEF;
+}
+.book_appointment_card{
+
+    width: 40%;
+    height: 550px;
+    margin-left: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: black;
+    font-size: xx-large;
+}
+.select_date_btn{
+    height: 50px;
+    width: 36%;
+    margin-top: 3%;
+    color: #5D5FEF;
+    background-color: white;
+    border: solid 2px #5D5FEF;
+    border-radius: 20px;
+    margin-left: 35%;
+
+}
+.select_date_slot{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 20px;
+    
+    padding: 40px;
+    /* background-color: red; */
+    margin-left: 5%;
+   
+}
+.book_appointment{
+    text-align: center;
+    justify-content: center;
+}
+.book_appointment_btn{
+    width: 80%;
+    /* background-color: white;
+    border: 3px solid #5D5FEF; */
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-size: large;
+}
+.book_appointment_continue_btn{
+    height: 50px;
+    width: 36%;
+    margin-top: 3%;
+    color: #5D5FEF;
+    background-color: white;
+    border: solid 2px #5D5FEF;
+    border-radius: 20px;
+    /* margin-left: 35%; */
+}

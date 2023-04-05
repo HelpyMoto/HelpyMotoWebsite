@@ -1,0 +1,93 @@
+.accordion-item {
+    margin: 0 10px;
+    border: 1px solid black;
+    outline: none !important;
+  }
+  .accordion {
+    margin: 10px 10px;
+  }
+  
+  .accordion-header {
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin: 0 5px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .accordion-button {
+    font-weight: bolder;
+  font-size: 20px;
+  outline: none !important;
+
+    background-color: #f7f7f7;
+    color: #000000;
+   
+    margin: 0 0px;
+ 
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .accordion-button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    outline: none !important;
+
+  }
+  
+  .accordion-button:focus {
+    outline: none !important;
+
+    box-shadow: none;
+  }
+  
+  .accordion-button.collapsed {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .accordion-button.collapsed:hover {
+    background-color: #f7f7f7;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .accordion-body {
+    background-color: #fff;
+    color: #000000;
+    font-size: 16px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.457);
+    animation: fade-in 0.5s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .accordion-button {
+      font-size: 16px;
+      margin: 0 5px;
+      padding: 10px;
+    }
+    .accordion-body {
+      font-size: 14px;
+      margin: 5px;
+      padding: 10px;
+    }
+  }
+  

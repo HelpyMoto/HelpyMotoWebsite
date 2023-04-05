@@ -1,0 +1,13 @@
+/* Hide the scrollbar on all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: Add styling to the scrollbar track and thumb */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}

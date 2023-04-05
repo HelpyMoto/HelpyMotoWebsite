@@ -1,0 +1,10 @@
+.text-dark {
+    text-decoration: none; /* remove underline */
+    transition: all 0.3s ease-in-out; /* add transition effect */
+  }
+  
+  .text-dark:hover {
+    color: red; /* change color on hover */
+    text-decoration: none; /* remove underline on hover */
+  }
+  

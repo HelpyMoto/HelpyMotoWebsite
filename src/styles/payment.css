@@ -1,0 +1,103 @@
+.paymentmethodh_btn{
+    width: 40%;
+    background-color: white;
+    border: 1px solid #D3D3D3;
+    height: 50px;
+    text-align: left;
+    margin-left: 30px;
+    padding-left: 20px;
+}
+.paymentmethodh{
+
+    margin-top: 50px;
+    color: #5D5FEF;
+    text-align: left;
+    display: flex;
+}
+.payment_container{
+    /* box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.2); */
+    border: 2px solid rgb(0,0,0,0.2);
+    width: 60%;
+    height: 600px;
+    margin-left: 7%;
+    overflow: auto;
+}
+.price_card{
+    /* border: solid 2px rgb(0,0,0,0.2); */
+    box-shadow: 4px 4px 4px 4px rgb(0,0,0,0.2);
+    width: 28%;
+    height: 120px;
+    margin-left: 3%;
+    padding-left: 30px;
+
+    
+    
+}
+
+#heading1{
+    margin-left:"15%";
+    font-size: xx-large;
+}
+
+#heading2{
+    margin-left:"15%";
+    color:black;
+    font-size: x-large;
+}
+.pricecard_btn{
+    height: 50px;
+    width: 30%;
+    margin-top: 5%;
+    color: black;
+    background-color: white;
+    border: solid 2px #5D5FEF;
+    border-radius: 20px;
+    margin-bottom: 300px;
+    margin-left: 25%;
+    /* padding: 10px;
+    text-align: left;
+    padding-left: 10%; */
+    text-align: center;
+    font-size: large;
+}
+.pricecard_btn:hover{
+    color: white;
+    background-color:#5D5FEF;
+    height: 60px;
+    width: 35%;
+    transition: 0.3s;
+    text-align: center;
+
+
+
+}
+
+@media only screen and (max-width: 1400px) {
+    #heading1{
+        margin-left:"15%";
+        font-size: x-large;
+    }
+    
+    #heading2{
+        margin-left:"15%";
+        color:black;
+        font-size: large;
+    }
+
+
+}
+
+@media only screen and (max-width: 680px) {
+    #heading1{
+        margin-left:"5%";
+        font-size: small;
+    }
+    
+    #heading2{
+        margin-left:"5%";
+        color:black;
+        font-size: xx-small;
+    }
+
+
+}

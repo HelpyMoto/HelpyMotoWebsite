@@ -151,15 +151,16 @@ a.dropdown-item {
   }
 }
 .mobile-image img {
+  position: relative;
 width: 100%;
-height: 100vh;
+height: 140vh;
 }
 
 @media only screen and (min-width: 768px) {
   .mobile-image img {
     width: 100vw;
     display: none;
-    height: 100vh;
+    height: auto;
   }
 }
 @media (max-width: 991px) {
@@ -356,7 +357,7 @@ height: 100vh;
 .inputBox-navbar input:valid~span,
 .inputBox-navbar input:focus~span {
   transform: translateX(113px) translateY(-15px);
-  font-size: 0.em;
+  font-size: 0.6em;
   padding: 5px 10px;
   background: #000;
   letter-spacing: 0.2em;
@@ -366,7 +367,7 @@ height: 100vh;
 
 .inputBox1-navbar input:valid~span,
 .inputBox1-navbar input:focus~span {
-  transform: translateX(156px) translateY(-15px);
+  transform: translateX(106px) translateY(-15px);
   font-size: 0.7em;
   padding: 5px 10px;
   background: #000;

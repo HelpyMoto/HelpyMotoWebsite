@@ -6,6 +6,7 @@ function Tracker() {
 <div className="all">  
     <div className="home">
       <h1>How Helpy Moto Works ?</h1>
+      <br/>
       <div className="home_list" >
         <div className="home_list_item">
           <div className="number1"><span>1</span></div>

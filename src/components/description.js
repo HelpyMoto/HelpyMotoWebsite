@@ -4,39 +4,10 @@ import "../styles/description.css"
 import Button from 'react-bootstrap/Button';
 
 import 'react-notifications/lib/notifications.css';
-import { NotificationContainer, NotificationManager } from 'react-notifications';
 import Popup from './Popup_service';
 import Engine from "../assets/engine.png";
 import Plumber from "../assets/plumber-holding-something.jpg";
 import hr from "../assets/24.jpg";
-import img1 from "../assets/images.jpg";
-import img2 from "../assets/images.png";
-import mobile from "../assets/mobile.jpeg";
-
-
-
-
-// import Video from "../assets/Helpy moto.mp4";
-
-import Video from "../assets/HM final.mp4";
-
-
-
-import styled from "styled-components";
-const Hr = styled.hr`
-
-width: 10%;
-text-align: left;
-margin-left: 0;
-height: 2px;
-background-color: red;
-`;
-
-
-
-
-
-
 
 
 
@@ -105,159 +76,28 @@ const Description = () => {
 
     localStorage.setItem("cart", JSON.stringify(oldVal));
     alert(e.data + " is added to cart");
-    createNotification()
+   
   };
 
 
-  function createNotification() {
-    return () => {
-      NotificationManager.success('Success message', 'Title here');
-    };
-  };
+
+
   return (
     <div className='description'>
 
-      
-      <div className="bg" style={{ backgroundColor: "black" }}>
-    
-        <video height="800" width="100%" muted autoPlay>
-          <source src={Video}  />
-        </video>
-
-      
-      </div>
-      <div
-        className="form-container"
-        style={{
-          position: "absolute",
-          top: "50%",
-          right: "3%",
-          transform: "translateY(-50%)",
-        }}
-      >
-        <h4>Experience The Best Car Services In Delhi</h4>
-        <form className="side" action="#" method="post">
-          <div className="input-group mt-4">
-            <label className="input-group-text text-black  form-ip">
-              Location
-            </label>
-            <input
-              type="text"
-              name="location"
-              className="form-control bg-transparent a"
-              placeholder="Enter the Location"
-            />
-          </div>
-          <div className="input-group mt-3">
-            <label className="input-group-text text-black form-ip">
-              Vehicle Model
-            </label>
-            <input
-              type="text"
-              name="vehicle-model"
-              className="form-control bg-transparent a"
-              placeholder="Enter Vehicle Model"
-            />
-          </div>
-          <div className="input-group mt-3">
-            <label className="input-group-text text-black form-ip">
-              Vehicle Number
-            </label>
-            <input
-              type="text"
-              name="vehicle-number"
-              className="form-control bg-transparent a"
-              placeholder="Enter Vehicle Number"
-            />
-          </div>
-          <div className="input-group mt-3 mb-3">
-            <label className="input-group-text text-black form-ip">Issue</label>
-            <input
-              type="text"
-              name="issue"
-              className="form-control bg-transparent a"
-              placeholder="Enter the issue"
-            />
-          </div>
-          <input
-            className="btn btn-danger"
-            type="Submit"
-            defaultValue="Hire Now"
-          />
-          <div class="container1 mb-3 mt-3">
-            <div class="ratings mt-2 mr-5 ">
-              <span class="rating">
-                &#9733;&#9733;&#9733;&#9733;&#9734; 4.5/5
-              </span>{" "}
-              <br />
-              <span class="reviews">
-                {" "}
-                Based on 10,000+
-                <br /> reviews
-              </span>
-            </div>
-            <span className="line">|</span>
-            <div class="ratings mt-2">
-              <span class="rating">20000+</span>
-              <br />
-              <span class="reviews">
-                {" "}
-                happy customers <br /> served!
-              </span>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      {/*App part*/}
-      <div>
-        <Hr></Hr>
-        <div style={{ textAlign: 'left', fontSize: '30px', fontWeight: 'bolder',color:"black" }}>
-          <p >Download HelpyMoto App</p>
-        </div>
-
-        <div style={{ display: 'flex', padding: '10px', margin: '5% 10%' }}>
-
-          <div style={{ padding: '10px', width: '50%' }}>
-
-            <div>
-              <img src={mobile} style={{borderRadius:"20px",boxShadow:"4px 4px 4px 4px rgb(0,0,0,0.2)"}} alt="mobile"/>
-            </div>
 
 
-          </div>
-
-          <div style={{ padding: '10px', width: '50%' }}>
-            <div>
-              <p style={{ fontSize: '20px', color: 'GrayText' }}>
-                Choose and book a seamless car service experience and get upto Rs 750 off with the HelpyMoto App</p>
-            </div>
-            <div style={{ display: "flex", padding: '5px' }}>
-              <div>
-                <img src={img1} style={{ height: '50px', cursor: 'pointer', margin: '0px 10px' }} alt="mobile"/>
-              </div>
-              <div>
-                <img src={img2} style={{ height: '53px', cursor: 'pointer' }} alt="mobile"/>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-        <Hr></Hr>
-      </div>
 
       {/*From here onwards the service page will start*/}
 
 
 
-
-      <div className='services'>
+      <div className='services' >
 
         <h1>Our Best Services</h1>
 
         <br />
-        <div className="des_cards">
+        <div className="des_cards" style={{ overflow: "scroll", height: "300px" }}>
           <div class="des_card" onClick={togglePopup1}>
             <img src={Engine} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
             <div class="des_container">
@@ -402,7 +242,7 @@ const Description = () => {
                   <p><b>Q. When is the best time to get this service done?</b></p>
                   <p>A. We would suggest, before going for a long drive or if the car is not being used for a long time.</p>
 
-                  
+
                   <br /> <br />
                   <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "periodic service", price: 2200 });
@@ -441,7 +281,7 @@ const Description = () => {
                   <p><b>Q. After how many Km is this recommended?</b></p>
                   <p>A. This service is recommended once every 6 months or when 5000km’s are completed, whichever occurs first</p>
                   <br /> <br />
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  <Button variant="primary" onClick={() => {
                     addItem({ id: Date.now(), data: "Tyre and wheel care", price: 2000 });
                   }}>Add to cart</Button>
 
@@ -847,18 +687,17 @@ const Description = () => {
         </div>
 
         <br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />        <br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />        <br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />        <br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />        <br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />        <br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />      
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />      
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />       
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />     
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />       
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-  
-        <br /><br /><br /><br />
-      </div>
-      <NotificationContainer />
 
+    
+      </div>
+      
     </div>
 
   )

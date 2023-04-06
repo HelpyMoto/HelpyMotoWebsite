@@ -1,19 +1,14 @@
 .description {
-
-    background-image: linear-gradient(to right, #7D7FF2, #c4c9FD);
     height: 700px;
     z-index: 3;
-    color: #5D5FeF;
-
     position: relative;
-
-
-
 }
-.App-header{
-  font-size: xx-large;
-  font-weight: 600;
+
+.App-header {
+    font-size: xx-large;
+    font-weight: 600;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -132,23 +127,12 @@
     color: #5D5FeF;
 }
 
-/* .description_container {
-    display: flex;
-} */
 
 .heading {
     font-size: 40px;
 
 }
-/* 
-.description_left {
-    width: 50%;
-}
 
-.description_right {
-
-    width: 50%;
-} */
 
 #car {
     width: 550px;
@@ -160,16 +144,16 @@
 }
 
 .numbers {
-    /* background-color: #5D5FeF; */
+
     width: 90%;
     margin-left: 5%;
     height: 180px;
-    /* z-index: 6; */
+
 
     border-radius: 20px;
     display: flex;
     padding-top: 2%;
-    /* margin-top: 20px; */
+
 
 
 }
@@ -190,8 +174,9 @@
 
 
     height: 600px;
-    
+
     color: black;
+    text-align: center;
 
 
 
@@ -201,71 +186,7 @@
     padding-top: 100px;
 }
 
-/* .cards_description {
-    display: flex;
-    margin-bottom: 30px;
 
-
-    width: 90%;
-    margin-left: 5%;
-    position: relative;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-
-
-} */
-/* 
-.description_popup_btn {
-    height: 50px;
-    margin-left: 70%;
-    background-color: #5D5FeF;
-    color: white;
-    border-radius: 20px;
-} */
-/* 
-.description_popup_btn:hover {
-    height: 50px;
-    margin-left: 70%;
-    background-color: #999AF5;
-    color: white;
-    border-radius: 20px;
-} */
-
-
-/* 
-.cards_description>.card {
-
-
-    width: 280px;
-    height: 280px;
-    margin-left: 30px;
-    margin-top: 30px;
-    font-size: x-large;
-
-
-
-
-}
-*/
-/* .cards_description :hover {
-    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    
-
-} */
-
-
-
-
-
-
-
-/* .description button{
-    width: 200px;
-    color: #5D5FeF;
-    border-radius: 20px;
-    height: 50px;
-} */
 
 
 /*Some Changes in cards*/
@@ -325,6 +246,11 @@
 
 }
 
+.des_outer_container>div>Button {
+    margin-left: 80%;
+
+}
+
 /* for responsiveness */
 
 
@@ -372,7 +298,19 @@
         grid-template-columns: auto;
         grid-gap: 5%;
     }
+
+    .des_popup_items {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    .des_outer_container>div>Button {
+        margin-left: 10%;
+
+    }
 }
+
 @media screen and (max-width: 767px) {
     .form-container {
         margin-top: 1rem;
@@ -418,7 +356,7 @@
         height: 500px;
     }
 
-    img {
+    .abc {
         display: none;
     }
 }

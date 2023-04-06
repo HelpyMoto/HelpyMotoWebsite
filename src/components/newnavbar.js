@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "../styles/newnavbar.css";
-import Videos from "../assets/HM final1.mp4";
+import Videos from "../assets/HM final.mp4";
 import Logo from "../assets/Logo.png";
-import MobileImage from "../assets/bg3.jpg";
+import MobileImage from "../assets/bg4.jpg";
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [showForm, setShowForm] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [bgSize, setBgSize] = useState('110vh'); // initialize the background image size
 
   useEffect(() => {
     const timeoutId = setTimeout(() => setShowForm(true), 5000);
@@ -24,6 +26,10 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  function handleClick() {
+    setBgSize('130vh'); // set the new background image size
+  }
+
   return (
     <>
       <header>
@@ -33,7 +39,7 @@ const Navbar = () => {
             isMobile ? "mobile-nav" : ""
           }`}
         >
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="#/">
             {" "}
             <img
               src={Logo}
@@ -41,7 +47,7 @@ const Navbar = () => {
               className="img-fluidnavbar"
               style={{ width: "70px", height: "70px", marginLeft: "20px" }}
             />
-          </a>
+          </Link>
           <span
             className="centrenavbar"
             style={{
@@ -51,6 +57,7 @@ const Navbar = () => {
             }}
           >
             For Unstoppable <br />
+            Journey
             <span
               className="centrenavbar1"
               style={{
@@ -59,7 +66,6 @@ const Navbar = () => {
                 marginLeft: isMobile ? "30px" : "0",
               }}
             >
-              Journey
             </span>
           </span>
           <button
@@ -112,8 +118,8 @@ const Navbar = () => {
         </nav>
       </header>
       {isMobile ? (
-        <div className="mobile-image">
-    <img src={MobileImage} alt="mobile-background"  />
+         <div className="mobile-image" onClick={handleClick}>
+         <img src={MobileImage} alt="mobile-background" style={{ height: bgSize }} />
     <div className="maincontainerform123">
       <form className="container-navbar-form" action="#!" method="post">
         <div className="card-navbar">
@@ -122,18 +128,19 @@ const Navbar = () => {
             <input type="text" required="required" />
             <span className="user-navbar">Location</span>
           </div>
-          <div className="inputBox-navbar">
-            <input type="text-navbar" required="required" />
-            <span>Vehicle Model</span>
+          <div className="inputBox1-navbar">
+            <input type="text" required="required" />
+            <span className="user-navbar">Vehicle Model</span>
+                </div>
+                <div className="inputBox1-navbar">
+            <input type="text" required="required" />
+            <span className="user-navbar">Vehicle Number</span>
+                </div>
+                <div className="inputBox1-navbar">
+            <input type="text" required="required" />
+            <span className="user-navbar">Issue</span>
           </div>
-          <div className="inputBox-navbar">
-            <input type="password" required="required" />
-            <span>Vehicle Number</span>
-          </div>
-          <div className="inputBox-navbar">
-            <input type="password" required="required" />
-            <span>Issue</span>
-          </div>
+          
           <button className="enter">Hire Now</button>
         </div>
       </form>
@@ -142,12 +149,16 @@ const Navbar = () => {
 ) : (
   <div className="banner">
     <video
-      autoPlay
-      muted
-      className={`tagline-video ${showForm ? "hidden" : ""}`}
-    >
-      <source src={Videos} type="video/mp4" />
-    </video>
+  autoPlay
+  muted
+  preload="auto"
+  loop="true"
+
+  className={`tagline-video ${showForm ? "hidden" : ""}`}
+>
+  <source src={Videos} type="video/mp4" />
+</video>
+
             <div className="overlay" />
             <div className="mobile-image">
               <img src={MobileImage} alt="mobile-background"

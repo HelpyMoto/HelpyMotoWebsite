@@ -15,4 +15,3 @@ const Your_cart = props => {
 };
 
 export default Your_cart;
-// temporary

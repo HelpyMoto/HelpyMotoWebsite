@@ -141,7 +141,7 @@ const footer = () => {
             </Link>
           </div>
         </footer>
-        <marquee behavior="" direction="right">Thank you for choosing our mechanical services. We are committed to providing you with the best possible experience.</marquee>
+       
       </div>
     </>
   );

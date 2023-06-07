@@ -78,8 +78,6 @@ const Description = () => {
   };
 
 
-
-
   return (
     <div className='description'>
       {/*From here onwards the service page will start*/}
@@ -89,66 +87,68 @@ const Description = () => {
 
         <br />
   
-  <div className="desc ml-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup1}>
-    <img src={Engine} alt="Avatar" className="mb-4" />
+  <div className="desc flex flex-wrap justify-center gap-3">
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup1}>
+    <img src={Engine} alt="Avatar" className="mb-4 object-contain" />
     <h4 className="font-bold text-center text-xs">PERIODIC SERVICE</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup2}>
-    <img src={Plumber} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup2}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">TYRE AND WHEEL CARE</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup3}>
-    <img src={hr} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup3}>
+    <img src={hr} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">CUSTOM SERVICES</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup4}>
-    <img src={Engine} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup4}>
+    <img src={Engine} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">BRAKE MAINTENANCE</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup5}>
-    <img src={Plumber} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup5}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">CAR SPA AND CLEANING</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup6}>
-    <img src={hr} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup6}>
+    <img src={hr} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">CLUTCH AND FITMENTS</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup7}>
-    <img src={Engine} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup7}>
+    <img src={Engine} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">BATTERIES</h4>
   </div>
   
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup8}>
-    <img src={Plumber} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup8}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">DENTING AND PAINTING</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup9}>
-    <img src={hr} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup9}>
+    <img src={hr} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">WINDSHEILD AND LIGHTS</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup10}>
-    <img src={Engine} alt="Avatar" className="mb-2" />
+  
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup10}>
+    <img src={Engine} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">INSURANCE</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup11}>
-    <img src={Plumber} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup11}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">ROAD SIDE ASSISTANCE</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup12}>
-    <img src={hr} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup12}>
+    <img src={hr} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">ACCESSORIES</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup13}>
-    <img src={Engine} alt="Avatar" className="mb-2" />
+
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup13}>
+    <img src={Engine} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">DETAILING SERVICE</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup14}>
-    <img src={Plumber} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup14}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">AC SERVICE AND REPAIR</h4>
   </div>
-  <div className="des card flex flex-col items-center justify-center" onClick={togglePopup15}>
-    <img src={Plumber} alt="Avatar" className="mb-2" />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup15}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">SUSPENSION AND FITMENTS</h4>
   </div>
 </div>

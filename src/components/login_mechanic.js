@@ -1,6 +1,6 @@
 
 
-/*
+
 import React from 'react'
 import "../styles/login.css"
 import Button from 'react-bootstrap/Button';
@@ -87,7 +87,7 @@ const login_mechanic = () => {
 }
 
 export default login_mechanic
-*/
+
 /*
 import React from 'react';
 import Button from 'react-bootstrap/Button';
@@ -162,7 +162,7 @@ const LoginMechanic = () => {
 
 export default LoginMechanic;
 */
-
+/*
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -237,5 +237,5 @@ const LoginMechanic = () => {
 
 export default LoginMechanic;
 
-
+*/
 

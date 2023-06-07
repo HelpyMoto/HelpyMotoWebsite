@@ -35,9 +35,8 @@ const Navbar = () => {
       <header>
         {" "}
         <nav
-          className={`navbar containernavbar navbar-expand-lg navbar-light nav-color ${
-            isMobile ? "mobile-nav" : ""
-          }`}
+          className={`navbar containernavbar navbar-expand-lg navbar-light nav-color ${isMobile ? "mobile-nav" : ""
+            }`}
         >
           <Link className="navbar-brand" to="#/">
             {" "}
@@ -118,79 +117,78 @@ const Navbar = () => {
         </nav>
       </header>
       {isMobile ? (
-         <div className="mobile-image" onClick={handleClick}>
-         <img src={MobileImage} alt="mobile-background" style={{ height: bgSize }} />
-    <div className="maincontainerform123">
-      <form className="container-navbar-form" action="#!" method="post">
-        <div className="card-navbar">
-          <Link className="signgup-navbar" href="#!">Hire A Mechanic</Link>
-          <div className="inputBox1-navbar">
-            <input type="text" required="required" />
-            <span className="user-navbar">Location</span>
-          </div>
-          <div className="inputBox1-navbar">
-            <input type="text" required="required" />
-            <span className="user-navbar">Vehicle Model</span>
+        <div className="mobile-image" onClick={handleClick}>
+          <img src={MobileImage} alt="mobile-background" style={{ height: bgSize }} />
+          <div className="maincontainerform123">
+            <form className="container-navbar-form" action="#!" method="post">
+              <div className="card-navbar">
+                <Link className="signgup-navbar" href="#!">Hire A Mechanic</Link>
+                <div className="inputBox1-navbar">
+                  <input type="text" required="required" />
+                  <span className="user-navbar">Location</span>
                 </div>
                 <div className="inputBox1-navbar">
-            <input type="text" required="required" />
-            <span className="user-navbar">Vehicle Number</span>
+                  <input type="text" required="required" />
+                  <span className="user-navbar">Vehicle Model</span>
                 </div>
                 <div className="inputBox1-navbar">
-            <input type="text" required="required" />
-            <span className="user-navbar">Issue</span>
-          </div>
-          
-          <button className="enter">Hire Now</button>
-        </div>
-      </form>
-    </div>
-  </div>
-) : (
-  <div className="banner">
-    <video
-  autoPlay
-  muted
-  preload="auto"
-  loop="true"
+                  <input type="text" required="required" />
+                  <span className="user-navbar">Vehicle Number</span>
+                </div>
+                <div className="inputBox1-navbar">
+                  <input type="text" required="required" />
+                  <span className="user-navbar">Issue</span>
+                </div>
 
-  className={`tagline-video ${showForm ? "hidden" : ""}`}
->
-  <source src={Videos} type="video/mp4" />
-</video>
-
-            <div className="overlay" />
-            <div className="mobile-image">
-              <img src={MobileImage} alt="mobile-background"
-               className={`images ${showForm ? "hidden" : ""}`}/>
-    <div className="maincontainerform123">
-      <form className="container-navbar-form" action="#!" method="post">
-        <div className="card-navbar">
-          <Link className="signgup-navbar" href="#!">Hire A Mechanic</Link>
-          <div className="inputBox1-navbar">
-            <input type="text" required="required" />
-            <span className="user-navbar">Location</span>
+                <button className="enter">Hire Now</button>
+              </div>
+            </form>
           </div>
-          <div className="inputBox-navbar">
-            <input type="text" required="required" />
-            <span>Vehicle Model</span>
-                    </div>
-                    <div className="inputBox1-navbar">
-            <input type="text" required="required" />
-            <span className="user-navbar">Vehicle Number</span>
-          </div>
-          <div className="inputBox-navbar">
-            <input type="text" required="required" />
-            <span>Issue</span>
-          </div>
-          
-          <button className="enter">Hire Now</button>
         </div>
-      </form>
-    </div>
-  </div>
-  </div>
-)}
+      ) : (
+        <div className="banner">
+        <video
+          autoPlay
+          muted
+          preload="auto"
+          loop="true"// loop={true}
+          className={`tagline-video ${showForm ? "hidden" : ""}`}
+        >
+          <source src={Videos} type="video/mp4" />
+        </video>
+
+          <div className="overlay" />
+          <div className="mobile-image">
+            <img src={MobileImage} alt="mobile-background"
+              className={`images ${showForm ? "hidden" : ""}`} />
+            <div className="maincontainerform123">
+              <form className="container-navbar-form" action="#!" method="post">
+                <div className="card-navbar">
+                  <Link className="signgup-navbar" href="#!">Hire A Mechanic</Link>
+                  <div className="inputBox1-navbar">
+                    <input type="text" required="required" />
+                    <span className="user-navbar">Location</span>
+                  </div>
+                  <div className="inputBox-navbar">
+                    <input type="text" required="required" />
+                    <span>Vehicle Model</span>
+                  </div>
+                  <div className="inputBox1-navbar">
+                    <input type="text" required="required" />
+                    <span className="user-navbar">Vehicle Number</span>
+                  </div>
+                  <div className="inputBox-navbar">
+                    <input type="text" required="required" />
+                    <span>Issue</span>
+                  </div>
+
+                  <button className="enter">Hire Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

@@ -23,9 +23,6 @@ const login_mechanic = () => {
           <h2>Welcome Back!</h2>
           <h2>Log in to your account</h2>
           <br />
-
-
-
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Mechanic ID/Phone Number/Email</Form.Label>

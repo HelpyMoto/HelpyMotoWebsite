@@ -1,14 +1,17 @@
 
 .banner video {
-    width: 100%;
+    
     /* position: absolute; */
-    	/* overflow: hidden; */
+    height: 100%;
+    width:100%;
+    /* width: 100vw; */
+      
 }
 
 
 header{
 	position:absolute;
-	width:100%;
+	width:100vw;
 	top:0;
 	z-index:11;
 }
@@ -138,10 +141,16 @@ a.dropdown-item {
   right: -20px;
   transition: 0.4s;
 }
-
-@media screen and (max-width: 768px) {
+#hireMechButton{
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
   .tagline-video {
     display: none;
+    /* height: 100vh; */
+    
+    
   }
   .mobile-img {
     display: block;
@@ -154,6 +163,11 @@ a.dropdown-item {
   position: relative;
 width: 100%;
 height: 140vh;
+}
+.mobile-image video {
+  position: relative;
+width: 100vw;
+height: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -193,9 +207,8 @@ height: 140vh;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   margin-top: 7.5rem;
-  position: absolute;
   animation-name: slideInFromRight;
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -221,7 +234,7 @@ height: 140vh;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
   }
 }
 
@@ -244,33 +257,94 @@ height: 140vh;
 /* for screens between 768px and 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .maincontainerform123 {
-    margin-top: 6.5rem;
+    margin-top: 28rem;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    margin-left: -25%;
+    width: 100vw;
+    animation-name: slideInFromRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-8%);
+
+      opacity: 1;
+    }
   }
 }
 
 /* for screens between 576px and 768px */
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .maincontainerform123 {
-    margin-top: 5.5rem;
+    margin-top: 18rem;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    margin-left: -23%;
+    width: 100vw;
+    animation-name: slideInFromRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+
+      opacity: 1;
+    }
   }
 }
 
 /* for screens smaller than 576px */
 @media screen and (max-width: 575px) {
   .maincontainerform123 {
-    margin-top: 4.5rem;
+    margin-top: 18rem;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    align-self: center;
+    width: 100vw;
+    animation-name: slideInFromRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .maincontainerform123 {
+    margin-top: 18rem;
+    position: absolute;
+    align-self: center;
+    width: 100vw;
+    animation-name: slideInFromRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+
+      opacity: 1;
+    }
   }
 }
 
@@ -282,7 +356,6 @@ height: 140vh;
   display: block;
   font-weight: bold;
   font-size: x-large;
-  margin-top: 1em;
   margin-bottom: 0.5em;
   
 }
@@ -315,14 +388,18 @@ height: 140vh;
 
 
 
-.inputBox-navbar,
-.inputBox1-navbar {
+.inputBox1-navbar,
+.inputBox2-navbar,
+.inputBox3-navbar,
+.inputBox4-navbar{
   position: relative;
   width: 250px;
 }
 
-.inputBox-navbar input,
-.inputBox1-navbar input {
+.inputBox1-navbar input,
+.inputBox2-navbar input,
+.inputBox3-navbar input,
+.inputBox4-navbar input {
   width: 100%;
   padding: 10px;
   outline: none;
@@ -331,18 +408,21 @@ height: 140vh;
   font-weight: 400;
   font-size: 1em;
   background: transparent;
-  border-left: 2px solid #000;
+  border: 2px solid #000;
   border-bottom: 2px solid #000;
   transition: 0.1s;
   border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-.inputBox-navbar span,
-.inputBox1-navbar span {
+.inputBox1-navbar span,
+.inputBox2-navbar span,
+.inputBox3-navbar span,
+.inputBox4-navbar span{
   margin-top: 5px;
   position: absolute;
   left: 0;
-  transform: translateY(-4px);
+  transform: translateY;
   margin-left: 0px;
   padding: 10px;
   pointer-events: none;
@@ -354,9 +434,9 @@ height: 140vh;
   border-radius: 8px;
 }
 
-.inputBox-navbar input:valid~span,
-.inputBox-navbar input:focus~span {
-  transform: translateX(113px) translateY(-15px);
+.inputBox1-navbar input:valid~span,
+.inputBox1-navbar input:focus~span {
+  transform: translateX(180px) translateY(-15px);
   font-size: 0.6em;
   padding: 5px 10px;
   background: #000;
@@ -365,9 +445,29 @@ height: 140vh;
   border: 2px;
 }
 
-.inputBox1-navbar input:valid~span,
-.inputBox1-navbar input:focus~span {
-  transform: translateX(106px) translateY(-15px);
+.inputBox2-navbar input:valid~span,
+.inputBox2-navbar input:focus~span {
+  transform: translateX(130px) translateY(-15px);
+  font-size: 0.7em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+.inputBox3-navbar input:valid~span,
+.inputBox3-navbar input:focus~span {
+  transform: translateX(115px) translateY(-15px);
+  font-size: 0.7em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+.inputBox4-navbar input:valid~span,
+.inputBox4-navbar input:focus~span {
+  transform: translateX(200px) translateY(-15px);
   font-size: 0.7em;
   padding: 5px 10px;
   background: #000;
@@ -401,4 +501,12 @@ height: 140vh;
 .enter:hover {
   background-color: rgb(0, 0, 0);
   color: white;
+  font-weight: bold;
+}
+
+.formImgContainer img{
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+  display: flex;
 }

@@ -8,9 +8,7 @@ import Popup from './Popup_service';
 import Engine from "../assets/engine.png";
 import Plumber from "../assets/plumber-holding-something.jpg";
 import hr from "../assets/24.jpg";
-
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Description = () => {
@@ -80,144 +78,81 @@ const Description = () => {
   };
 
 
-
-
   return (
     <div className='description'>
-
-
-
-
       {/*From here onwards the service page will start*/}
-
-
-
-      <div className='services' >
+      <div className='services'>
 
         <h1>Our Best Services</h1>
 
         <br />
-        <div className="des_cards" style={{ overflow: "scroll", height: "300px" }}>
-          <div class="des_card" onClick={togglePopup1}>
-            <img src={Engine} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>PERIODIC SERVICES</b></h4>
-              <br />
+  
+  <div className="desc flex flex-wrap justify-center gap-3">
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup1}>
+    <img src={Engine} alt="Avatar" className="mb-4 object-contain" />
+    <h4 className="font-bold text-center text-xs">PERIODIC SERVICE</h4>
+  </div>
+  <div className="des card flex flex-col items-center justify-center w-full w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup2}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">TYRE AND WHEEL CARE</h4>
+  </div>
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup3}>
+    <img src={hr} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">CUSTOM SERVICES</h4>
+  </div>
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup4}>
+    <img src={Engine} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">BRAKE MAINTENANCE</h4>
+  </div>
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup5}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">CAR SPA AND CLEANING</h4>
+  </div>
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup6}>
+    <img src={hr} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">CLUTCH AND FITMENTS</h4>
+  </div>
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup7}>
+    <img src={Engine} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">BATTERIES</h4>
+  </div>
+  
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup8}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">DENTING AND PAINTING</h4>
+  </div>
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup9}>
+    <img src={hr} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">WINDSHEILD AND LIGHTS</h4>
+  </div>
+  
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup10}>
+    <img src={Engine} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">INSURANCE</h4>
+  </div>
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup11}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">ROAD SIDE ASSISTANCE</h4>
+  </div>
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup12}>
+    <img src={hr} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">ACCESSORIES</h4>
+  </div>
 
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup2}>
-            <img src={Plumber} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>TYRE AND WHEEL CARE</b></h4>
-              <br />
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup13}>
+    <img src={Engine} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">DETAILING SERVICE</h4>
+  </div>
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup14}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">AC SERVICE AND REPAIR</h4>
+  </div>
+  <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup15}>
+    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
+    <h4 className="font-bold text-center text-xs">SUSPENSION AND FITMENTS</h4>
+  </div>
+</div>
 
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup3}>
-            <img src={hr} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>CUSTOM SERVICES</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup4}>
-            <img src={Engine} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>BRAKE MAINTENANCE</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup5}>
-            <img src={Plumber} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>CAR SPA AND CLEANING</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup6}>
-            <img src={hr} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>CLUTCH AND FITMENTS</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup7}>
-            <img src={Engine} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>BATTERIES</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup8}>
-            <img src={Plumber} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>DENTING AND PAINTING</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup9}>
-            <img src={hr} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>WINDSHEILD AND LIGHTS</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup10}>
-            <img src={Engine} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>INSURANCE</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup11}>
-            <img src={Plumber} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>ROAD SIDE ASSISTANCE</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup12}>
-            <img src={hr} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>ACCESSORIES</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup13}>
-            <img src={Engine} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>DETAILING SERVICE</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup14}>
-            <img src={Plumber} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>AC SERVICE AND REPAIR</b></h4>
-              <br />
-
-            </div>
-          </div>
-          <div class="des_card" onClick={togglePopup15}>
-            <img src={Plumber} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
-            <div class="des_container">
-              <h4><b>SUSPENSION AND FITMENTS</b></h4>
-              <br />
-
-            </div>
-          </div>
 
 
           {isOpen && <Popup
@@ -697,9 +632,9 @@ const Description = () => {
 
     
       </div>
-      
-    </div>
-
+    
+    
+    
   )
 }
 

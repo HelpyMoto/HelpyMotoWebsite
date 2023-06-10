@@ -35,9 +35,8 @@ const Navbar = () => {
       <header>
         {' '}
         <nav
-          className={`navbar containernavbar navbar-expand-lg navbar-light nav-color ${
-            isMobile ? 'mobile-nav' : ''
-          }`}
+          className={`navbar containernavbar navbar-expand-lg navbar-light nav-color ${isMobile ? 'mobile-nav' : ''
+            }`}
         >
           <Link className='navbar-brand' to='#/'>
             {' '}

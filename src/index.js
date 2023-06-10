@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-
 import Home from "./components/Home";
 import LoginPage from "./components/loginPage";
 import Newaccount from "./components/newaccount";
@@ -27,7 +26,6 @@ import GotoCart from "./components/goto_cart";
 import Tracking from "./components/service_tracking";
 import Track from "./components/service_tracking_details";
 import Dropdown from "./components/dropdown";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function Index() {
@@ -37,7 +35,7 @@ export default function Index() {
         <Route path="/LoginPage" element={<LoginPage />} />
         <Route path="/Newaccount" element={<Newaccount />} />
         <Route path="/" element={<Home />} />
-        <Route path="/loginuser" element={<Loginuser />} />
+        <Route path="/loginuser" element={<Loginuser />} /> 
         <Route path="/signupuser" element={<Signupuser />} />
         <Route path="/loginmechanic" element={<Loginmechanic />} />
         <Route path="/logindriver" element={<Logindriver />} />

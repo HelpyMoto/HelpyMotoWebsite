@@ -23,11 +23,11 @@ function Home() {
       <br/><br/>
 
       <Numbers
-        mealsTarget={10000}
-        customersTarget={15000}
-        menuTarget={2000}
+        mealsTarget={1000}
+        customersTarget={1500}
+        menuTarget={200}
         starsTarget={4.5}
-        step={1}
+        step={1}  
       />
 
       <Clients/>

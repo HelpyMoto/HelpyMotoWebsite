@@ -32,9 +32,16 @@ html,body{
   }
 }
 
-@media (min-width: 456px) and (max-width:1000px) {
+@media (min-width: 456px) and (max-width:691px) {
   .description {
     height: 1700px !important;
+    margin-bottom:25rem !important; /* Set the desired height for the div */
+  }
+}
+
+@media (min-width: 692px) and (max-width:1002px) {
+  .description {
+    height: 1000px !important;
     margin-bottom:25rem !important; /* Set the desired height for the div */
   }
 }

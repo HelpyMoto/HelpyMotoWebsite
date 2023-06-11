@@ -29,196 +29,61 @@ html{
     color: #ef233c;
     text-decoration: solid;
 }
-.trackerContainer{
+.trackerCards{
     display: flex;
     flex-direction: row;
+    margin-top: 0rem;
+}
+.card{
+    width: 18rem;
+    border-width: 0rem;
+}
+.cardIndex{
+    background-color: #bab5a8;
+    width: 1.3rem;
+    border-radius: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
-.trackerItem1{
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
-    height: 260px;
-    width: 230px;
-    background-color: white;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #ef233c;
-    margin-left: 60px;
-    border-radius: 50px;
-    align-items:center;
-}
-#item1:hover{
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
-    height: 260px;
-    width: 230px;
-    background-color: #ef233c;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #ef233c;
-    margin-left: 80px;
-    border-radius: 50px;
-    align-items:center;
- 
-    
-}
+.card img{
 
-.trackerItem1 img{
-    height: 100px;
-    width: 100px;
-}
-.trackerItem1 h2{
-    margin: 10px;
-    color: black;
-    font-size: 25px;
-}
-.trackerItem1 h4{
-   
-    margin: 10px;
-    margin-top: 5px;
-    color: black;
-    font-size: 15px;
-}
-.trackerItem2{
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
-    height: 260px;
-    width: 230px;
-    background-color: white;
+    border-color: #bab5a8;
     border-style: solid;
-    border-width: 10px;
-    border-color: #2367ef;
-    margin-left: 20px;
-    border-radius: 50px;
-    align-items:center;
-}
-#item1:hover{
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
-    height: 260px;
-    width: 230px;
-    background-color: #ef233c;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #ef233c;
-    margin-left: 80px;
-    border-radius: 50px;
-    align-items:center;
- 
-    
-}
-
-.trackerItem2 img{
-    height: 100px;
-    width: 100px;
-}
-.trackerItem2 h2{
-    margin: 10px;
-    color: black;
-    font-size: 25px;
-}
-.trackerItem2 h4{
-    margin: 10px;
-    margin-top: 5px;
-    color: black;
-    font-size: 15px;
-}
-.trackerItem3{
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
-    height: 260px;
-    width: 230px;
-    background-color: white;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #37ef23;
-    margin-left: 20px;
-    border-radius: 50px;
-    align-items:center;
-}
-#item1:hover{
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
-    height: 260px;
-    width: 230px;
-    background-color: #ef233c;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #ef233c;
-    margin-left: 80px;
-    border-radius: 50px;
-    align-items:center;
- 
-    
-}
-
-.trackerItem3 img{
-    height: 100px;
-    width: 100px;
-}
-.trackerItem3 h2{
-    margin: 10px;
-    color: black;
-    font-size: 25px;
-}
-.trackerItem3 h4{
-    margin: 10px;
-    margin-top: 5px;
-    color: black;
-    font-size: 15px;
-}
-.trackerItem4{
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
-    height: 260px;
-    width: 230px;
-    background-color: white;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #f5ac1b;
-    margin-left: 20px;
-    border-radius: 50px;
-    align-items:center;
-}
-#item1:hover{
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
-    height: 260px;
-    width: 230px;
-    background-color: #ef233c;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #ef233c;
-    margin-left: 40px;
-    border-radius: 50px;
-    align-items:center;
- 
-    
-}
-
-.trackerItem4 img{
-    height: 100px;
-    width: 100px;
-}
-.trackerItem4 h2{
-    margin: 10px;
-    color: black;
-    font-size: 25px;
-}
-.trackerItem4 h4{
-    margin: 10px;
-    margin-top: 5px;
-    color: black;
-    font-size: 15px;
-}
-.iconArrow{
+    border-radius: 90%;
     align-self: center;
+    height: 6rem;
+    width: 6rem;
+}
+.card-title{
+    font-size: 1rem;
+}
+.arrow1{
+    margin-left: -5rem;
+    align-self: center; 
+    height: 10rem;
+    width: auto;
+    transform: rotate(70deg);
+}
+.arrow2{
+    z-index: -1;
+    margin-top: 4rem;
+    margin-left: -2rem;
+    align-self: center;
+    height: 10rem;
+    width: auto;
+    transform: rotate(45deg);
+}
+
+.arrow3{
+    z-index: -1;
+    margin-top: 1rem;
+    margin-left: -3rem;
+    align-self: center;
+    height: 10rem;
+    width: auto;
+    transform: rotate(90deg);
 }

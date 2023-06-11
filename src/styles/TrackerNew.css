@@ -1,0 +1,89 @@
+html{
+    scroll-behavior: smooth;
+}
+.tracker{
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+}
+.trackerTitle{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.trackerTitle h1{
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    align-self: center;
+}
+#titleHead1{
+   align-self: center;
+   margin-left: 30vw;
+}
+#titleHead2{
+    color: #ef233c;
+    text-decoration: solid;
+}
+.trackerCards{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0rem;
+}
+.card{
+    width: 18rem;
+    border-width: 0rem;
+}
+.cardIndex{
+    background-color: #bab5a8;
+    width: 1.3rem;
+    border-radius: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.card img{
+
+    border-color: #bab5a8;
+    border-style: solid;
+    border-radius: 90%;
+    align-self: center;
+    height: 6rem;
+    width: 6rem;
+}
+.card-title{
+    font-size: 1rem;
+}
+.arrow1{
+    margin-left: -5rem;
+    align-self: center; 
+    height: 10rem;
+    width: auto;
+    transform: rotate(70deg);
+}
+.arrow2{
+    z-index: -1;
+    margin-top: 4rem;
+    margin-left: -2rem;
+    align-self: center;
+    height: 10rem;
+    width: auto;
+    transform: rotate(45deg);
+}
+
+.arrow3{
+    z-index: -1;
+    margin-top: 1rem;
+    margin-left: -3rem;
+    align-self: center;
+    height: 10rem;
+    width: auto;
+    transform: rotate(90deg);
+}

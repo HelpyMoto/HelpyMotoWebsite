@@ -4,16 +4,22 @@ import Videos from '../assets/HM final.mp4';
 import Logo from '../assets/Logo.png';
 import MobileImage from '../assets/bg4.jpg';
 import { Link } from 'react-router-dom';
+ import React, { useState, useEffect } from "react";
+import "../styles/newnavbar.css";
+import Videos from "../assets/HM final.mp4";
+import Logo from "../assets/Logo.png";
+import MobileImage from "../assets/bg4.jpg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showForm, setShowForm] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [bgSize, setBgSize] = useState('110vh'); // initialize the background image size
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => setShowForm(true), 5000);
-    return () => clearTimeout(timeoutId);
-  }, []);
+  const [formDisplay, setFormDisplay] = useState('none');
+  // useEffect(() => {
+  //   const timeoutId = setTimeout(() => setShowForm(true), 5000);
+  //   return () => clearTimeout(timeoutId);
+  // }, []);
 
   useEffect(() => {
     function handleResize() {
@@ -35,8 +41,9 @@ const Navbar = () => {
       <header>
         {' '}
         <nav
-          className={`navbar containernavbar navbar-expand-lg navbar-light nav-color ${isMobile ? 'mobile-nav' : ''
-            }`}
+          className={`navbar containernavbar navbar-expand-lg navbar-light nav-color ${
+            isMobile ? 'mobile-nav' : ''
+          }`}
         >
           <Link className='navbar-brand' to='#/'>
             {' '}
@@ -60,7 +67,7 @@ const Navbar = () => {
             <span
               className='centrenavbar1'
               style={{
-                fontSize: '17px',
+                fontSize: '10px',
                 color: 'white',
                 marginLeft: isMobile ? '30px' : '0',
               }}
@@ -99,6 +106,13 @@ const Navbar = () => {
                   About Us
                 </Link>
               </li>
+              <button
+                onClick={() => setFormDisplay('Block')}
+                type='submit'
+                className='css-button-arrow--red buttonnavbar'
+              >
+                Hire a Mechanic
+              </button>
             </ul>
             <ul className='navbar-nav ml-auto align-items-center'>
               <li className='nav-item'>
@@ -117,17 +131,22 @@ const Navbar = () => {
       </header>
       {isMobile ? (
         <div className='mobile-image' onClick={handleClick}>
-          <img
-            src={MobileImage}
-            alt='mobile-background'
-            style={{ height: bgSize }}
-          />
+          <video autoPlay muted preload='auto' loop='true'>
+            <source
+              src={Videos}
+              type='video/mp4'
+              className='tagline-video-mobile'
+            />
+          </video>
+          {/* <img src={MobileImage} alt="mobile-background" style={{ height: bgSize }} /> */}
+
           <div className='maincontainerform123'>
             <form className='container-navbar-form' action='#!' method='post'>
               <div className='card-navbar'>
                 <Link className='signgup-navbar' href='#!'>
                   Hire A Mechanic
                 </Link>
+
                 <div className='inputBox1-navbar'>
                   <input type='text' required='required' />
                   <span className='user-navbar'>Location</span>
@@ -156,8 +175,8 @@ const Navbar = () => {
             autoPlay
             muted
             preload='auto'
-            loop={false}
-            className={`tagline-video ${showForm ? '' : ''}`}
+            loop='true'
+            className={`tagline-video ${showForm ? 'hidden' : ''}`}
           >
             <source src={Videos} type='video/mp4' />
           </video>
@@ -169,9 +188,17 @@ const Navbar = () => {
               alt='mobile-background'
               className={`images ${showForm ? 'hidden' : ''}`}
             />
-            <div className='maincontainerform123'>
+
+            <div
+              className='maincontainerform123'
+              style={{ display: formDisplay }}
+            >
               <form className='container-navbar-form' action='#!' method='post'>
                 <div className='card-navbar'>
+                  <div className='formImgContainer'>
+                    <img src={Logo} alt='logo' />
+                  </div>
+
                   <Link className='signgup-navbar' href='#!'>
                     Hire A Mechanic
                   </Link>
@@ -179,20 +206,18 @@ const Navbar = () => {
                     <input type='text' required='required' />
                     <span className='user-navbar'>Location</span>
                   </div>
-                  <div className='inputBox-navbar'>
+                  <div className='inputBox2-navbar'>
                     <input type='text' required='required' />
                     <span>Vehicle Model</span>
                   </div>
-                  <div className='inputBox1-navbar'>
+                  <div className='inputBox3-navbar'>
                     <input type='text' required='required' />
                     <span className='user-navbar'>Vehicle Number</span>
                   </div>
-                  <div className='inputBox-navbar'>
+                  <div className='inputBox4-navbar'>
                     <input type='text' required='required' />
                     <span>Issue</span>
                   </div>
-
-                  <button className='enter'>Hire Now</button>
                 </div>
               </form>
             </div>

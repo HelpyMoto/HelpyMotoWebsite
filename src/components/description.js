@@ -79,15 +79,15 @@ const Description = () => {
 
 
   return (
-    <div className='description'>
+    <div className='flex flex-col py-20 my-10 bg-black -skew-y-3'>
       {/*From here onwards the service page will start*/}
-      <div className='services'>
+      <div className='text-center text-white skew-y-3'>
 
         <h1>Our Best Services</h1>
 
         <br />
   
-  <div className="desc flex flex-wrap justify-center gap-3">
+  <div className="desc flex flex-wrap justify-center gap-3  text-black max-w-6xl mx-auto">
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup1}>
     <img src={Engine} alt="Avatar" className="mb-4 object-contain" />
     <h4 className="font-bold text-center text-xs">PERIODIC SERVICE</h4>
@@ -621,14 +621,7 @@ const Description = () => {
 
         </div>
 
-        <br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />      
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />      
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />       
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />     
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />       
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
+        
 
     
       </div>

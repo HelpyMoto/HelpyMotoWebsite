@@ -5,7 +5,7 @@ import img2 from "../assets/images.png";
 import mobile from "../assets/mobile.jpeg";
 const App = () => {
     return (
-  <div class="flex flex-col items-center justify-center bg-white-100 text-black-500">
+  <div class="flex flex-col items-center justify-center bg-white-100 text-black-500 ">
   <h1 class="text-3xl font-bold">Download HelpyMoto App</h1>
   <div class="flex flex-col items-center mt-4">
     <img src={mobile} alt="mobile" />

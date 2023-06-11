@@ -17,8 +17,12 @@ function Home() {
   return (
     <div className="App">
       <NewNavbar />
+      <div className="max-w-6xl mx-auto">
+
       <App />
+      </div>
       <Service/>
+      <div className="max-w-6xl mx-auto">
       <Tracker />
       <br/><br/>
 
@@ -28,12 +32,13 @@ function Home() {
         menuTarget={200}
         starsTarget={4.5}
         step={1}  
-      />
+        />
 
       <Clients/>
 
       <Dropdown />
       <Servicing />
+        </div>
       {/* <Aboutus/>  */}
       {/* <Work/> */}
       {/* <Connect/> */}

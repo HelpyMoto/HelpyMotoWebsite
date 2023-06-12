@@ -33,6 +33,7 @@ html{
     display: flex;
     flex-direction: row;
     margin-top: 0rem;
+    flex-wrap: wrap;
 }
 .card{
     width: 18rem;
@@ -61,29 +62,28 @@ html{
 .card-title{
     font-size: 1rem;
 }
-.arrow1{
-    margin-left: -5rem;
-    align-self: center; 
-    height: 10rem;
-    width: auto;
-    transform: rotate(70deg);
-}
-.arrow2{
-    z-index: -1;
-    margin-top: 4rem;
-    margin-left: -2rem;
-    align-self: center;
-    height: 10rem;
-    width: auto;
-    transform: rotate(45deg);
-}
 
-.arrow3{
-    z-index: -1;
-    margin-top: 1rem;
-    margin-left: -3rem;
-    align-self: center;
-    height: 10rem;
-    width: auto;
-    transform: rotate(90deg);
+
+@media screen and (max-width: 480px){
+    .trackerCards{
+        flex-direction: column;
+    }
+    .trackerCards CurvedArrow{
+        display: none;
+    }.trackerTitle{
+        margin-left: -30px;
+    }
+}
+@media screen and (max-width: 575px){
+    .trackerCards{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        column-count: 2;
+    }
+    .trackerCards CurvedArrow{
+        display: none;
+    }.trackerTitle{
+        margin-left: -30px;
+    }
 }

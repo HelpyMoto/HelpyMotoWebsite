@@ -1,0 +1,512 @@
+
+.banner video {
+    
+    /* position: absolute; */
+    height: 100%;
+    width:100%;
+    /* width: 100vw; */
+      
+}
+
+
+header{
+	position:absolute;
+	width:100vw;
+	top:0;
+	z-index:11;
+}
+
+.overlay {
+    background: #00000051;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px #000;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .buttonnavbar {
+    float: right;
+  }
+  .navbar .containernavbar .navbar-expand-lg .navbar-light .nav-color{
+    font-size: large !important;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+    text-decoration: none;
+    font-size: large !important;
+  }
+  .nav-item{
+    margin-left: 10px;
+  }
+ 
+  .navbar-light .navbar-nav .nav-link:after {
+    content: '';
+    display: flex;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover:after {
+    color: #ffffff;
+    width:100%;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+  }
+
+  .collapse.navbar-collapse{
+    margin-left: 50px;
+  }
+.nav-link{
+    margin-right: 7px;
+}
+
+.dropdown-menu {
+    padding: 0px;
+}
+span.navbar-toggler-icon {
+    background-image: url(https://i.ibb.co/1v9M0dZ/menu.png) !important;
+    width: 25px;
+    height: 25px;
+	cursor:pointer;
+}
+button.navbar-toggler:focus {
+    outline: none;
+}
+
+a.dropdown-item {
+    padding: 10px;
+    background: #515156;
+    color: #fff;
+}
+.css-button-arrow--red {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #ef233c
+}
+.css-button-arrow--red:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left:8px;
+}
+.css-button-arrow--red:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.css-button-arrow--red:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+#hireMechButton{
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .tagline-video {
+    display: none;
+    /* height: 100vh; */
+    
+    
+  }
+  .mobile-img {
+    display: block;
+  }
+  .navbar {
+    background-color: black;
+  }
+}
+.mobile-image img {
+  position: relative;
+width: 100%;
+height: 140vh;
+}
+.mobile-image video {
+  position: relative;
+width: 100vw;
+height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-image img {
+    width: 100vw;
+    display: none;
+    height: auto;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-right: 35px;
+  }
+}
+
+.buttonnavbar {
+  margin-right: 35px;
+}
+
+@media (max-width: 767px) {
+  .buttonnavbar {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-toggler {
+    margin-right: 20px; /* or any other value */
+  }
+}
+
+
+/* form */
+.maincontainerform123 {
+  margin-top: 7.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin-top: 7.5rem;
+  animation-name: slideInFromRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* media */
+
+@media screen and (min-width: 1025px) {
+  .maincontainerform123 {
+    margin-top: 5.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .maincontainerform123 {
+    margin-top: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .maincontainerform123 {
+    margin-top: 12.5rem;
+  }
+}
+
+
+
+
+
+/* for screens between 768px and 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .maincontainerform123 {
+    margin-top: 28rem;
+    position: absolute;
+    margin-left: -25%;
+    width: 100vw;
+    animation-name: slideInFromRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-8%);
+
+      opacity: 1;
+    }
+  }
+}
+
+/* for screens between 576px and 768px */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .maincontainerform123 {
+    margin-top: 18rem;
+    position: absolute;
+    margin-left: -23%;
+    width: 100vw;
+    animation-name: slideInFromRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+
+      opacity: 1;
+    }
+  }
+}
+
+/* for screens smaller than 576px */
+@media screen and (max-width: 575px) {
+  .maincontainerform123 {
+    margin-top: 18rem;
+    position: absolute;
+    align-self: center;
+    width: 100vw;
+    animation-name: slideInFromRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .maincontainerform123 {
+    margin-top: 18rem;
+    position: absolute;
+    align-self: center;
+    width: 100vw;
+    animation-name: slideInFromRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+
+      opacity: 1;
+    }
+  }
+}
+
+
+.signgup-navbar {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 0.5em;
+  
+}
+
+.card-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 300px;
+  flex-direction: column;
+  gap: 18px;
+  background: #ffffff;
+  border-radius: 8px;
+  float: right;
+  margin-right: 30px;
+
+  
+}
+@media (max-width: 767px) {
+  .card-navbar {
+    margin: 80px auto;
+  }
+}
+@media (max-width: 460px) {
+  .card-navbar {
+    margin: 80px 38px;
+  }
+}
+
+
+
+.inputBox1-navbar,
+.inputBox2-navbar,
+.inputBox3-navbar,
+.inputBox4-navbar{
+  position: relative;
+  width: 250px;
+}
+
+.inputBox1-navbar input,
+.inputBox2-navbar input,
+.inputBox3-navbar input,
+.inputBox4-navbar input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 1em;
+  background: transparent;
+  border: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.inputBox1-navbar span,
+.inputBox2-navbar span,
+.inputBox3-navbar span,
+.inputBox4-navbar span{
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY;
+  margin-left: 0px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.inputBox1-navbar input:valid~span,
+.inputBox1-navbar input:focus~span {
+  transform: translateX(180px) translateY(-15px);
+  font-size: 0.6em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox2-navbar input:valid~span,
+.inputBox2-navbar input:focus~span {
+  transform: translateX(130px) translateY(-15px);
+  font-size: 0.7em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+.inputBox3-navbar input:valid~span,
+.inputBox3-navbar input:focus~span {
+  transform: translateX(115px) translateY(-15px);
+  font-size: 0.7em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+.inputBox4-navbar input:valid~span,
+.inputBox4-navbar input:focus~span {
+  transform: translateX(200px) translateY(-15px);
+  font-size: 0.7em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox-navbar input:valid,
+.inputBox-navbar input:focus,
+.inputBox-navbar-navbar input:valid,
+.inputBox1-navbar input:focus {
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+
+.enter:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bold;
+}
+
+.formImgContainer img{
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+  display: flex;
+}

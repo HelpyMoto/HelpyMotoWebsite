@@ -27,28 +27,31 @@ const NavbarUpdate = () => {
             <p className='text-center'>For Unstoppable Journey</p>
 
             {/* Rest buttons */}
-            <ul className=' w-full text-lg items-center hidden md:flex lg:flex xl:flex'>
+            <ul className=' w-full text-lg items-center hidden md:flex lg:flex xl:flex space-x-3'>
               <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px]  '>
-                <Link className='nav-link ' to='/'>
+                <Link className='text-white hover:text-white hover:no-underline text-start' to='/'>
                   Home
                 </Link>
               </li>
               <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] '>
-                <Link className='nav-link' to='/'>
+                <Link className='text-white hover:text-white hover:no-underline text-start' to='/'>
                   Services
                 </Link>
               </li>
               <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] '>
-                <Link className='nav-link' to='/'>
+                <Link className='text-white hover:text-white hover:no-underline text-start' to='/'>
                   HM Store
                 </Link>
               </li>
-              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] '>
-                <Link className='nav-link' to='/'>
+
+              <p className=' after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[100px]  '>
+                <Link className='text-white hover:text-white hover:no-underline text-start' to='/'>
                   About Us
                 </Link>
-              </li>
+              </p>
+              
             </ul>
+            
           </div>
 
           {/* Hamburger */}
@@ -87,23 +90,23 @@ const NavbarUpdate = () => {
         >
           <div className='flex w-full pb-1 justify-end'>
             <ul className=' text-lg items-end flex flex-col '>
-              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px]  '>
-                <Link className='nav-link text-end' to='/'>
+              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] text-end '>
+                <Link className='text-white hover:text-white hover:no-underline text-end' to='/'>
                   Home
                 </Link>
               </li>
-              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] '>
-                <Link className='nav-link text-end' to='/'>
+              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] text-end'>
+                <Link className='text-white hover:text-white hover:no-underline text-end' to='/'>
                   Services
                 </Link>
               </li>
-              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] '>
-                <Link className='nav-link text-end' to='/'>
+              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] text-end'>
+                <Link className='text-white hover:text-white hover:no-underline text-end' to='/'>
                   HM Store
                 </Link>
               </li>
-              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] '>
-                <Link className='nav-link text-end' to='/'>
+              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] text-end'>
+                <Link className='text-white hover:text-white hover:no-underline text-end' to='/'>
                   About Us
                 </Link>
               </li>

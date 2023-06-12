@@ -82,7 +82,7 @@ const Description = () => {
       {/*From here onwards the service page will start*/}
       <div className='text-center text-white skew-y-3'>
 
-        <h1>Our Best Services</h1>
+        <h1 className="text-4xl font-bold font-sans">Our Best Services</h1>
 
         <br />
   

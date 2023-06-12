@@ -1,4 +1,4 @@
-
+/* 
 
 import React from 'react'
 import "../styles/login.css"
@@ -88,3 +88,4 @@ const login_mechanic = () => {
 export default login_mechanic;
 
 
+ */

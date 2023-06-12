@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import "../styles/signup_user.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -67,7 +67,7 @@ const signup_user = () => {
                   label="I agree with terms and conditions"
                 />
               </Form.Group>
-              {/* <a href='11'>Forgot password?</a> */}
+              
             </div>
 
             <Button variant="primary" type="submit">
@@ -105,3 +105,4 @@ const signup_user = () => {
 };
 
 export default signup_user;
+ */

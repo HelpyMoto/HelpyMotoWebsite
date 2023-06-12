@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import "../styles/register_mechanic.css"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -122,4 +122,4 @@ const register_driver = () => {
     )
 }
 
-export default register_driver
+export default register_driver */

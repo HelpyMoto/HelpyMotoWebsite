@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import "../styles/password_reset.css"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -55,4 +55,4 @@ const password_reset = () => {
     )
 }
 
-export default password_reset
+export default password_reset */

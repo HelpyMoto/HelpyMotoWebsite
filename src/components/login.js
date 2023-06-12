@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import "../styles/login.css"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -83,4 +83,4 @@ const login = () => {
   )
 }
 
-export default login
+export default login */

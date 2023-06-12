@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+/* import React, { useEffect, useRef, useState } from "react";
 import "../styles/hire.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -172,3 +172,4 @@ const Hire = () => {
 };
 
 export default Hire;
+ */

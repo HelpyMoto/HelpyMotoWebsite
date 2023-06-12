@@ -2,13 +2,25 @@ import React, { useEffect, useState } from "react";
 import "../styles/description.css"
 
 import Button from 'react-bootstrap/Button';
-
 import 'react-notifications/lib/notifications.css';
 import Popup from './Popup_service';
-import Engine from "../assets/engine.png";
-import Plumber from "../assets/plumber-holding-something.jpg";
-import hr from "../assets/24.jpg";
+import Engine from "../assets/brake.jpg";
+import periodic from "../assets/engine.png";
+import Plumber from "../assets/carwash.jpg";
+import Tyre from "../assets/plumber-holding-something.jpg"
+import denting from "../assets/denting.jpg";
+import hr from "../assets/clutch.jpg";
+import insurance from "../assets/insurance.jpg";
+import accessories from "../assets/accessories.jpg";
+import battery from "../assets/battery.jpg";
+import susp from "../assets/susp.jpg";
+import details from "../assets/details.jpg";
+import wind from "../assets/wind.jpg";
+import ac from "../assets/ac.jpg";
+import road from "../assets/road.jpg";
+import custom from "../assets/24.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Slide } from 'react-awesome-reveal';
 
 
 const Description = () => {
@@ -82,22 +94,22 @@ const Description = () => {
     <div className='description'>
       {/*From here onwards the service page will start*/}
       <div className='services'>
-
+      <Slide direction="left">
         <h1>Our Best Services</h1>
-
-        <br />
+      </Slide>
+        <br/>
   
   <div className="desc flex flex-wrap justify-center gap-3">
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup1}>
-    <img src={Engine} alt="Avatar" className="mb-4 object-contain" />
-    <h4 className="font-bold text-center text-xs">PERIODIC SERVICE</h4>
+    <img src={periodic} alt="Avatar" className="mb-4 object-contain" />
+    <h4 className="font-bold text-center text-xs">PERIODIC SERVICES</h4>
   </div>
   <div className="des card flex flex-col items-center justify-center w-full w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup2}>
-    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
+    <img src={Tyre} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">TYRE AND WHEEL CARE</h4>
   </div>
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup3}>
-    <img src={hr} alt="Avatar" className="mb-2 object-contain" />
+    <img src={custom} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">CUSTOM SERVICES</h4>
   </div>
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup4}>
@@ -113,42 +125,42 @@ const Description = () => {
     <h4 className="font-bold text-center text-xs">CLUTCH AND FITMENTS</h4>
   </div>
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup7}>
-    <img src={Engine} alt="Avatar" className="mb-2 object-contain" />
+    <img src={battery} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">BATTERIES</h4>
   </div>
   
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup8}>
-    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
+    <img src={denting} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">DENTING AND PAINTING</h4>
   </div>
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup9}>
-    <img src={hr} alt="Avatar" className="mb-2 object-contain" />
+    <img src={wind} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">WINDSHEILD AND LIGHTS</h4>
   </div>
   
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup10}>
-    <img src={Engine} alt="Avatar" className="mb-2 object-contain" />
+    <img src={insurance} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">INSURANCE</h4>
   </div>
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup11}>
-    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
+    <img src={road} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">ROAD SIDE ASSISTANCE</h4>
   </div>
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup12}>
-    <img src={hr} alt="Avatar" className="mb-2 object-contain" />
+    <img src={accessories} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">ACCESSORIES</h4>
   </div>
 
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup13}>
-    <img src={Engine} alt="Avatar" className="mb-2 object-contain" />
+    <img src={details} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">DETAILING SERVICE</h4>
   </div>
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup14}>
-    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
+    <img src={ac} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">AC SERVICE AND REPAIR</h4>
   </div>
   <div className="des card flex flex-col items-center justify-center w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2 mb-4" onClick={togglePopup15}>
-    <img src={Plumber} alt="Avatar" className="mb-2 object-contain" />
+    <img src={susp} alt="Avatar" className="mb-2 object-contain" />
     <h4 className="font-bold text-center text-xs">SUSPENSION AND FITMENTS</h4>
   </div>
 </div>

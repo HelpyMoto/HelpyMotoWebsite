@@ -19,29 +19,44 @@ html,body{
 .des{
  width:220px !important;
  height:200px !important;
+ cursor: pointer;
+ transition: transform 0.3s ease;
 }
+
+.des:hover{
+  transform: scale(1.08);
+}
+
 .description {
-  height:800px !important;
-  margin-bottom:20rem !important;
+  height: 940px !important;
+ /*margin-bottom:20rem !important;*/
+/*background-color: #d3c8c8;*/
+background: linear-gradient(45deg, #f2f2f2, #ebebeb);
+
+}
+
+.otp-field {
+  width: 35px;
+  height: 30px;
 }
 
 @media (min-width: 270px) and (max-width:455px) {
   .description {
-    height: 3400px !important;
-    margin-bottom:25rem !important; /* Set the desired height for the div */
+    height: 3800px !important;
+     /* Set the desired height for the div */
   }
 }
 
 @media (min-width: 456px) and (max-width:691px) {
   .description {
-    height: 1700px !important;
-    margin-bottom:25rem !important; /* Set the desired height for the div */
+    height: 2100px !important;
+    /* Set the desired height for the div */
   }
 }
 
-@media (min-width: 692px) and (max-width:1002px) {
+@media (min-width: 692px) and (max-width:1080px) {
   .description {
-    height: 1000px !important;
-    margin-bottom:25rem !important; /* Set the desired height for the div */
+    height: 1400px !important;
+   /* Set the desired height for the div */
   }
 }

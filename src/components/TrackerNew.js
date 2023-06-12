@@ -5,7 +5,6 @@ import Image2 from '../assets/tracker2-removebg-preview.png'
 import Image3 from '../assets/tracker3-removebg-preview.png'
 import Image4 from '../assets/tracker4.png'
 import Arrow from '../assets/arrow.png'
-import CurvedArrow from "react-curved-arrow";
 
 
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -16,7 +15,7 @@ function TrackerNew() {
   return (
     
     
-    <div className="tracker">
+    <div className="tracker mt-5 flex w-full justify-center">
          <div className='trackerTitle'>
             <h1 id="titleHead1">How </h1>
             <h1 id="titleHead2">Helpy Moto</h1>
@@ -81,9 +80,6 @@ function TrackerNew() {
 </div>
 </div>
 
-<CurvedArrow fromSelector=".item1" toSelector=".item2" middleY={20} zIndex={1} fromOffsetX={110} toOffsetX={-150} color='#bab5a8' width={4} fromOffsetY	={30}/>
-<CurvedArrow fromSelector=".item2" toSelector=".item3" middleY={-20} zIndex={1} fromOffsetX={80} toOffsetX={-150} color='#bab5a8' width={4} fromOffsetY	={-10} toOffsetY={20}/>
-<CurvedArrow fromSelector=".item3" toSelector=".item4" middleY={20} zIndex={1} fromOffsetX={80} toOffsetX={-130} color='#bab5a8' width={4} fromOffsetY	={30}/>
 </div>
         
 </div>

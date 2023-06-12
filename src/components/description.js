@@ -8,7 +8,6 @@ import Popup from './Popup_service';
 import Engine from "../assets/engine.png";
 import Plumber from "../assets/plumber-holding-something.jpg";
 import hr from "../assets/24.jpg";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Description = () => {
@@ -179,9 +178,9 @@ const Description = () => {
 
 
                   <br /> <br />
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "periodic service", price: 2200 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
 
@@ -216,9 +215,9 @@ const Description = () => {
                   <p><b>Q. After how many Km is this recommended?</b></p>
                   <p>A. This service is recommended once every 6 months or when 5000km’s are completed, whichever occurs first</p>
                   <br /> <br />
-                  <Button variant="primary" onClick={() => {
+                  {/* <Button variant="primary" onClick={() => {
                     addItem({ id: Date.now(), data: "Tyre and wheel care", price: 2000 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -247,9 +246,9 @@ const Description = () => {
                   <p><b>Q. How often is this service recommended?</b></p>
                   <p>A. We would suggest getting the service done every 3-4 months.</p>
                   <br /> <br />
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Custom service", price: 700 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
                 </div>
               </div>
@@ -277,9 +276,9 @@ const Description = () => {
                   <p><b>Q. When is the best time to get this service done?</b></p>
                   <p>A. We would suggest, before going for a long drive or if the car is not being used for a long time.</p>
                   <br /> <br />
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Brake maintenance", price: 1600 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -308,9 +307,9 @@ const Description = () => {
                   <p><b>Q. When is the best time to get this service done?</b></p>
                   <p>A. We would suggest, before going for a long drive or if the car is not being used for a long time.</p>
                   <br /> <br />
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Car Spa and Cleaning", price: 2200 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -338,9 +337,9 @@ const Description = () => {
                   <h4>FAQ</h4>
                   <p><b>Q. When is the best time to get this service done?</b></p>
                   <p>A. We would suggest, before going for a long drive or if the car is not being used for a long time.</p>
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Clutch and Fitments", price: 1000 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -368,9 +367,9 @@ const Description = () => {
                   <h4>FAQ</h4>
                   <p><b>Q. When is the best time to get this service done?</b></p>
                   <p>A. We would suggest, before going for a long drive or if the car is not being used for a long time.</p>
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Batteries services", price: 4500 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -398,9 +397,9 @@ const Description = () => {
                   <h4>FAQ</h4>
                   <p><b>Q. When is the best time to get this service done?</b></p>
                   <p>A. We would suggest, before going for a long drive or if the car is not being used for a long time.</p>
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Denting and painting services", price: 2000 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -428,9 +427,9 @@ const Description = () => {
                   <h4>FAQ</h4>
                   <p><b>Q. How much will it cost for a Maruti Suzuki swift?</b></p>
                   <p>A. The cost for replacement of front glass for a Maruti Suzuki will be 4,800/- to 5,000/-</p>
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Windsheild and Lights", price: 9000 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -458,9 +457,9 @@ const Description = () => {
                   <h4>FAQ</h4>
                   <p><b>Q. When is the best time to get this service done?</b></p>
                   <p>A. We would suggest, before going for a long drive or if the car is not being used for a long time.</p>
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Insurances", price: 2200 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -488,9 +487,9 @@ const Description = () => {
                   <h4>FAQ</h4>
                   <p><b>Q. What kind of services does Helpy Moto provide under Road Side Assistance?</b></p>
                   <p>A. We offer services under roadside assistance such as  flat-bed towing, wheel-lift towing, battery jumpstarting, and car self-starter issues.</p>
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                 {/*  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Road side Assistance", price: 2200 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -518,9 +517,9 @@ const Description = () => {
                   <h4>FAQ</h4>
                   <p><b>Q. When is the best time to get this service done?</b></p>
                   <p>A. We would suggest, before going for a long drive or if the car is not being used for a long time.</p>
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Accessories", price: 5000 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -548,9 +547,9 @@ const Description = () => {
                   <h4>FAQ</h4>
                   <p><b>Q. When is the best time to get this service done?</b></p>
                   <p>A. We would suggest, before going for a long drive or if the car is not being used for a long time.</p>
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Detailing services", price: 2600 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -578,9 +577,9 @@ const Description = () => {
                   <h4>FAQ</h4>
                   <p><b>Q. When is the best time to get this service done?</b></p>
                   <p>A. We would suggest, before going for a long drive or if the car is not being used for a long time.</p>
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                  {/* <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "AC Services", price: 3200 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
 
                 </div>
@@ -608,9 +607,9 @@ const Description = () => {
                   <h4>FAQ</h4>
                   <p><b>Q. When is the best time to get this service done?</b></p>
                   <p>A. We would suggest, before going for a long drive or if the car is not being used for a long time.</p>
-                  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
+                 {/*  <Button variant="primary" style={{ marginLeft: "80%" }} onClick={() => {
                     addItem({ id: Date.now(), data: "Suspension and Fitments", price: 1200 });
-                  }}>Add to cart</Button>
+                  }}>Add to cart</Button> */}
 
                 </div>
               </div>

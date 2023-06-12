@@ -11,20 +11,22 @@ import Servicing from "./servicing";
 import Service from "./description"
 import Tracker from './Tracker';
 import TrackerNew from "./TrackerNew";
+import NavbarUpdate from "./NavbarUpdate";
 
 // import Service from './Service';
 
 function Home() {
   return (
-    <div className="App">
-      <NewNavbar />
+    <div className="">
+      {/* <NewNavbar /> */}
+      <NavbarUpdate/>
       <div className="max-w-6xl mx-auto">
 
       <App />
       </div>
       <Service/>
-      <div className="max-w-6xl mx-auto">
-      <Tracker />
+
+      <TrackerNew />
       <br/><br/>
 
       <Numbers
@@ -32,14 +34,14 @@ function Home() {
         customersTarget={1500}
         menuTarget={200}
         starsTarget={4.5}
-        step={1}  
+        step={2}  
         />
 
       <Clients/>
 
       <Dropdown />
       <Servicing />
-        </div>
+       
       {/* <Aboutus/>  */}
       {/* <Work/> */}
       {/* <Connect/> */}

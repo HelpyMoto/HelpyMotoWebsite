@@ -1,6 +1,7 @@
 import Box from './components/Box';
 import Clients from './components/Clients';
 import DownloadApp from './components/DownloadApp';
+import Faq from './components/Faq';
 import Footer from './components/Footer';
 import Form from './components/Form';
 import NavbarUpdate from './components/NavbarUpdate';
@@ -8,7 +9,9 @@ import Services from './components/Services';
 import WhyService from './components/WhyService';
 import Works from './components/Works';
 
+
 function App() {
+ 
   return (
     <div>
       <NavbarUpdate />
@@ -20,6 +23,7 @@ function App() {
       <Clients/>
       <WhyService/>
       <DownloadApp/>
+      <Faq/>
       <Footer/>
     </div>
   );

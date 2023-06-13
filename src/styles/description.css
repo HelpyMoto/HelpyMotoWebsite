@@ -1,6 +1,7 @@
 .description {
     z-index: 3;
     position: relative;
+    margin-bottom: "50px";
 }
 
 .App-header {

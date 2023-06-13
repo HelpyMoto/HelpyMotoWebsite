@@ -1,5 +1,4 @@
 .description {
-    height: 700px;
     z-index: 3;
     position: relative;
 }
@@ -172,8 +171,6 @@
 
 .services {
 
-
-    height: 600px;
 
     color: black;
     text-align: center;

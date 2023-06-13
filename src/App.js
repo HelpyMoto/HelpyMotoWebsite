@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <NavbarUpdate />
-      <div className='md:hidden lg:hidden'>
+      <div className='flex w-full justify-center md:hidden lg:hidden xl:hidden'>
         <Form  />
       </div>
       <Services/>

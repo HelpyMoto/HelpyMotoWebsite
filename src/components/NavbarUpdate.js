@@ -161,7 +161,7 @@ const NavbarUpdate = () => {
 
 
         {/* Form */}
-        <div className='absolute top-1/2 right-0 transform -translate-y-1/2 hidden md:block lg:block'>
+        <div className='absolute top-1/2 right-4 transform -translate-y-1/2 hidden md:block lg:block'>
           <Form/>
         </div>
       </div>

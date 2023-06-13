@@ -1,8 +1,11 @@
 import Box from './components/Box';
 import Clients from './components/Clients';
+import DownloadApp from './components/DownloadApp';
+import Footer from './components/Footer';
 import Form from './components/Form';
 import NavbarUpdate from './components/NavbarUpdate';
 import Services from './components/Services';
+import WhyService from './components/WhyService';
 import Works from './components/Works';
 
 function App() {
@@ -15,6 +18,9 @@ function App() {
       <Services/>
       <Works/>
       <Clients/>
+      <WhyService/>
+      <DownloadApp/>
+      <Footer/>
     </div>
   );
 }

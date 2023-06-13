@@ -16,9 +16,6 @@ const Form = () => {
                 method='post'
               >
                 <div className='card-navbar' style={{marginTop:0}}>
-                  <div className='formImgContainer'>
-                    <img src={Logo} alt='logo' />
-                  </div>
 
                   <p className='font-bold text-2xl'>Hire A Mechanic Now!</p>
                   <div className='inputBox1-navbar'>

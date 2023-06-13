@@ -69,14 +69,11 @@ const Clients = () => {
           <motion.div ref={titleRef} variants={titleVariants}
         initial='hidden'
         animate={titleControl}>
+          <p className='font-semibold'>TESTIMONIALS</p>
           <p className='text-4xl font-bold'>
-            Don't just take our word for it... Read reviews from our customers
+            What Car Owners Say
           </p>
-          <p className='mt-2 text-sm'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            earum perferendis omnis cumque corrupti officia, dolorem amet
-            reprehenderi
-          </p>
+          
           </motion.div>
           
 
@@ -125,7 +122,7 @@ const Clients = () => {
                     />
                     <div className='col-span-3'>
                       <h2 className='text-lg font-semibold'>{card.name}</h2>
-                      <p>{card.position}</p>
+                      <p className='text-sm'>{card.position}</p>
                     </div>
                   </div>
                 </div>

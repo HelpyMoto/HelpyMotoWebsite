@@ -26,19 +26,19 @@ const Works = () => {
 
 
   return (
-    <div className='px-4 -skew-y-2 bg-black text-white mt-12 py-4'>
+    <div className='px-4 -skew-y-2 bg-white text-black mt-12 py-4'>
       <motion.div ref={titleRef} variants={titleVariants}
         initial='hidden'
         animate={titleControl}>
-      <p  className='text-4xl md:text-5xl lg:text-6xl font-bold text-center mt-10 mb-2 skew-y-2'>
-        How <span className='text-red-500'>HelpyMoto</span> Works?
+      <p  className='text-4xl font-bold text-center mt-10 mb-2 skew-y-2'>
+        How <span className='text-black'>HelpyMoto</span> Works?
       </p>
       </motion.div>
       
 
       <div className='grid  lg:grid-rows-5 lg:grid-flow-col gap-4 skew-y-2 mt-5'>
       <div className='lg:row-start-1 lg:row-span-3 bg-white px-3 py-3   flex justify-center items-center flex-col text-black rounded-md m-4 justify-center shadow-gray-400 shadow-lg mx-auto w-[250px]' ref={step1}>
-        <img src="service.png" alt="" className='w-2/3 object-contain' />
+        <img src="https://gomechprod.blob.core.windows.net/websiteasset/New%20Website/components/Homepage/Select-The-Perfect-Car-Service.png" alt="" className='w-2/3 object-contain' />
         <div className='flex flex-col w-full '>
         <p className='text-start text-lg font-semibold'>Select the Perfect Car Service</p>
         <p className='text-start text-sm'>From HelpyMoto's broad portfolio of services.</p>
@@ -46,7 +46,7 @@ const Works = () => {
        
       </div>
       <div className='lg:row-start-2 lg:row-span-3 bg-white px-3 py-3  flex justify-center items-center flex-col text-black rounded-md m-4 justify-center shadow-gray-400 shadow-lg mx-auto w-[250px]' ref={step2}>
-        <img src="service.png" alt="" className='w-2/3 object-contain' />
+        <img src="https://gomechprod.blob.core.windows.net/websiteasset/New%20Website/components/Homepage/Schedule-Free-Doorstep-Pick-up.png" alt="" className='w-2/3 object-contain' />
         <div className='flex flex-col w-full '>
         <p className='text-start text-lg font-semibold'>Schedule a Free Doorstep Pick-up</p>
         <p className='text-start text-sm'>We offer free pick up and drop for all services booked</p>
@@ -54,7 +54,7 @@ const Works = () => {
         
       </div>
       <div className='lg:row-start-1 lg:row-span-3 bg-white px-3 py-3 flex justify-center items-center flex-col text-black rounded-md m-4 justify-center shadow-gray-400 shadow-lg mx-auto w-[250px]' ref={step3}>
-        <img src="service.png" alt="" className='w-2/3 object-contain' />
+        <img src="https://gomechprod.blob.core.windows.net/websiteasset/New%20Website/components/Homepage/track-your-car-service-real-time.png" alt="" className='w-2/3 object-contain' />
         <div className='flex flex-col w-full '>
         <p className='text-start text-lg font-semibold'>Track your car service Real-Time</p>
         <p className='text-start text-sm'>We will take care of everything from here!</p>

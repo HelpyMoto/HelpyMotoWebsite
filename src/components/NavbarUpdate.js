@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo from '../assets/Logo.png';
 import { Link } from 'react-router-dom';
-import Videos from '../assets/HM final.mp4';
+//import Videos from '../assets/HM_final.mp4';
 import Form from './Form';
 
 const NavbarUpdate = () => {
@@ -151,7 +151,7 @@ const NavbarUpdate = () => {
       {/* Video */}
       <div className='block -z-40 -mt-28 relative top-0 left-0'>
         <video autoPlay muted preload='auto' loop={true}>
-          <source src={Videos} type='video/mp4' className='' />
+          <source src="HM_final.mp4" type='video/mp4' className='' />
         </video>
         {/* <div className='absolute w-full justify-center flex  text-white md:hidden lg:hidden xl:hidden bottom-5 left-0 right-0 '>
           <div className='w-fit md:hidden lg:hidden xl:hidden bg-red-500 px-5 py-2 rounded-md font-semibold cursor-pointer'>

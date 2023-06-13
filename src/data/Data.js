@@ -2,7 +2,7 @@ const servicesData = [
   {
     id: 1,
     name: 'Periodic Services',
-    image: 'service.png',
+    image: 'https://gomechprod.blob.core.windows.net/gomech-retail/gomechanic_assets/category_icons_new/xxxhdpi/1.png',
     price: 2200,
     tags: [
       'Recommended once every 6 months',
@@ -21,7 +21,7 @@ const servicesData = [
   {
     id: 2,
     name: 'Tyre And Wheel Care',
-    image: 'service.png',
+    image: 'https://gomechprod.blob.core.windows.net/gomech-retail/gomechanic_assets/category_icons/tyre-v3.svg',
     price: 2200,
     tags: [
       'Recommended once every 6 months',
@@ -42,7 +42,7 @@ const servicesData = [
   {
     id: 3,
     name: 'Custom Services',
-    image: 'service.png',
+    image: 'https://gomechprod.blob.core.windows.net/gomech-retail/gomechanic_assets/category_icons_new/xxxhdpi/Suspension-_-Fitments.png',
     price: 700,
     tags: [
       'Engine Oil Inspection',
@@ -62,7 +62,7 @@ const servicesData = [
   {
     id: 4,
     name: 'Brake Maintenance',
-    image: 'service.png',
+    image: 'https://gomechprod.blob.core.windows.net/gomech-retail/gomechanic_assets/car_parts_icons/brakes_2/xxhdpi.png',
     price: 1600,
     tags: [
       'Engine Oil Inspection',
@@ -82,7 +82,7 @@ const servicesData = [
   {
     id: 5,
     name: 'Car Spa and Cleaning',
-    image: 'service.png',
+    image: 'https://gomechprod.blob.core.windows.net/gomech-retail/gomechanic_assets/category_icons_new/xhdpi/4.png',
     price: 1600,
     tags: [
       'Engine Oil Inspection',
@@ -102,7 +102,7 @@ const servicesData = [
   {
     id: 6,
     name: 'Clutch and Fitments',
-    image: 'service.png',
+    image: 'https://gomechprod.blob.core.windows.net/gomech-retail/gomechanic_assets/category_icons_new/xxxhdpi/Clutch-_-Bumpers.png',
     price: 1600,
     tags: [
       'Engine Oil Inspection',
@@ -122,7 +122,7 @@ const servicesData = [
   {
     id: 7,
     name: 'Batteries',
-    image: 'service.png',
+    image: 'https://gomechprod.blob.core.windows.net/gomech-retail/gomechanic_assets/category_icons/battery-v3.svg',
     price: 1600,
     tags: [
       'Engine Oil Inspection',
@@ -142,7 +142,7 @@ const servicesData = [
   {
     id: 8,
     name: 'Denting and Painting',
-    image: 'service.png',
+    image: 'https://gomechprod.blob.core.windows.net/gomech-retail/gomechanic_assets/category_icons_new/xxxhdpi/10.png',
     price: 1600,
     tags: [
       'Engine Oil Inspection',

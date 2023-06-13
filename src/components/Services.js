@@ -27,7 +27,7 @@ const Services = () => {
 
   const titleVariants = {
     hidden: { opacity: 1, scale: 1, x: '-100%' },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.7 }, x: '0%' },
+    visible: { opacity: 1, scale: 1, transition: { duration:1.0 }, x: '0%' },
   };
 
   const serviceVariants = {

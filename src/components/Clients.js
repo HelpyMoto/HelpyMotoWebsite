@@ -64,7 +64,7 @@ const Clients = () => {
   };
   return (
     <div className='my-12 flex w-full flex-col'>
-      <div className='grid grid-cols-3 px-4 gap-y-3'>
+      <div className='grid grid-cols-2 px-4 gap-y-12'>
         <div  className='flex flex-col justify-center px-3 col-span-3 lg:col-span-1'>
           <motion.div ref={titleRef} variants={titleVariants}
         initial='hidden'

@@ -97,7 +97,7 @@ const Description = () => {
         <h1>Our Best Services</h1>
 
         <br />
-        <div className="des_cards" style={{ overflow: "scroll", height: "300px" }}>
+        <div className="des_cards">
           <div class="des_card" onClick={togglePopup1}>
             <img src={Engine} alt="Avatar" style={{ width: "80%", marginLeft: "5%", height: "200px" }} />
             <div class="des_container">
@@ -686,13 +686,7 @@ const Description = () => {
 
         </div>
 
-        <br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />      
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />      
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />       
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />     
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />       
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        
 
 
     

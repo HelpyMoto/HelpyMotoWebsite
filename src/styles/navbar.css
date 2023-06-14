@@ -393,7 +393,6 @@ height: 100%;
   width: 100%;
   padding: 10px;
   outline: none;
-  border: none;
   color: #000;
   font-weight: 400;
   font-size: 1em;
@@ -469,7 +468,10 @@ height: 100%;
 .inputBox-navbar input:valid,
 .inputBox-navbar input:focus,
 .inputBox-navbar-navbar input:valid,
-.inputBox1-navbar input:focus {
+.inputBox1-navbar input:focus,
+.inputBox2-navbar input:focus,
+.inputBox3-navbar input:focus,
+.inputBox4-navbar input:focus {
   border: 2px solid #000;
   border-radius: 8px;
 }

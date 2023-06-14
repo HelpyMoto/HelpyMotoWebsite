@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LoginPage from './components/LoginPage';
+import NewAccount from './components/NewAccount';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +13,8 @@ root.render(
       <Routes>
         
         <Route path="/" element={<App />} />
+        <Route path="/LoginPage" element={<LoginPage />} />
+        <Route path="/Newaccount" element={<NewAccount />} />
        
       </Routes>
     </BrowserRouter>

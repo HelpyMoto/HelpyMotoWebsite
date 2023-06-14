@@ -17,11 +17,10 @@ const LoginPage = () => {
 
   const gauth = async () => {
 
-    window.open('http://localhost:5000/api/v1/user/auth/google', "_self")
-    /* window.open('https://service-provider-apis.onrender.com/api/v1/user/auth/google', "_self")*/
+    window.open('https://service-provider-apis.onrender.com/api/v1/user/auth/google', "_self")
 
-    //const resp = await axios.get('https://service-provider-apis.onrender.com/api/v1/user/auth/google/callback')
-   // console.log(resp.data)
+   // const resp = await axios.get('https://service-provider-apis.onrender.com/api/v1/user/auth/google/callback')
+    //console.log(resp.data)
 
   }
 

@@ -16,17 +16,17 @@ export default function Faq() {
         
     }
   return (
-    <div className='flex flex-col mb-6 flex-wrap'>
-      <h1 className='text-centre font-bold self-center text-3xl m-3'> Frequently Asked Questions</h1>
+    <div className='flex flex-col mb-16 flex-wrap px-4 '>
+      <h1 className='text-center font-bold self-center text-4xl mt-10 mb-10'> Frequently Asked Questions</h1>
       <div className='rounded-md border-grey border-2 p-4 ml-4 mr-4'>
       {faq.map((item,index)=>{
         return(
             <>
-             <div key={index} className='bg-white flex w-auto h-20  mr-4 ml-4 pl-5 rounded-md border-grey  border-b-2 font-semibold items-center content-center justify-items-center hover:bg-slate-200 cursor-pointer' onClick={()=>openHandler(index)}>
+             <div key={index} className='bg-white flex w-auto h-20  mr-4 ml-4 pl-5 rounded-md border-grey  border-b-2 font-semibold items-center content-center justify-items-center hover:bg-gray-100 cursor-pointer' onClick={()=>openHandler(index)}>
            
             {item.title}
               </div>
-              <div className='flex bg-white rounded-md w-auto h-auto font-thin mb-4 border-solid border-2 mt-4 pl-4 pr-4 mr-4 ml-4 shadow-md text-justify text-lg' style={{display: open===index && isOpened===true? 'block' : 'none'}}>
+              <div className='flex bg-gray-100/40 rounded-br-lg rounded-bl-lg w-auto h-auto mb-4 py-4 pl-4 pr-4 mr-4 ml-4 shadow-sm text-justify' style={{display: open===index && isOpened===true? 'block' : 'none'}}>
               {item.description}
               </div>
             </>

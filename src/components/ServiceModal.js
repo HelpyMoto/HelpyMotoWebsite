@@ -4,7 +4,7 @@ import servicesData from '../data/Data';
 
 const ServiceModal = ({ serviceID, setService }) => {
   return (
-    <div className='h-screen fixed top-0 right-0 left-0 z-[400] w-full  p-4 font-bold text-center flex justify-center items-center' >
+    <div className=' fixed top-0 right-0 left-0 z-[400] w-full  p-4 font-bold text-center flex justify-center items-center' style={{height:"100svh"}} >
         <div onClick={() => setService({show:false, id:null})} className='fixed top-0 right-0 left-0 flex w-full h-full bg-black/30'>
 
 </div>

@@ -3,11 +3,12 @@ import servicesData from '../data/Data';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const Services = () => {
+const Services = ({setService}) => {
   const titleControl = useAnimation();
   const serviceControl = useAnimation();
   const [titleRef, titleinView] = useInView();
   const [serviceRef, serviceinView] = useInView();
+
   useEffect(() => {
     if (titleinView) {
       titleControl.start('visible');
@@ -34,6 +35,10 @@ const Services = () => {
     hidden: { opacity: 0, scale: 0 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.1 } },
   };
+
+  const handleServiceClick = () => {
+    
+  }
   return (
     <div className='px-4'>
       <motion.div
@@ -60,14 +65,17 @@ const Services = () => {
                 initial='hidden'
                 animate={serviceControl}
                 key={index}
-                className='shadow-lg hover:scale-105 transition transform duration-200 ease-in-out w-[130px] md:w-[200px] lg:w-[300px] md:h-[200px] lg:h-[200px] h-[130px] md:w-[200px] lg:w-[200px] md:h-[200px] lg:h-[300px] rounded-md bg-gray-200 p-3 flex justify-center items-center flex-col cursor-pointer'
+                
               >
+                <div className='shadow-lg hover:scale-105 transition transform duration-200 ease-in-out w-[130px] md:w-[200px] lg:w-[300px] md:h-[200px] lg:h-[200px] h-[130px] md:w-[200px] lg:w-[200px] md:h-[200px] lg:h-[300px] rounded-md bg-gray-200 p-3 flex justify-center items-center flex-col cursor-pointer' onClick={() => setService({show: true, id:val.id})}>
+
+                
                 
                 <img src={val.image} alt='' className='w-2/3 object-contain' />
-                <p className='md:text-xl lg:text-xl text-lg font-sans font-semibold text-center'>
+                <p className='md:text-xl lg:text-xl font-sans font-semibold text-center'>
                   {val.name}
                 </p>
-               
+                </div>
                 
               </motion.div>
             </>

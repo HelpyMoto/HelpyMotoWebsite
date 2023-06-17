@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Box from './components/Box';
 import Clients from './components/Clients';
 import DownloadApp from './components/DownloadApp';
@@ -8,9 +9,16 @@ import NavbarUpdate from './components/NavbarUpdate';
 import Services from './components/Services';
 import WhyService from './components/WhyService';
 import Works from './components/Works';
+import ServiceModal from './components/ServiceModal';
 
 
 function App() {
+
+  const [service, setService] = useState({
+    show: false,
+    id: null,
+  })
+
  
   return (
     <div>
@@ -18,7 +26,8 @@ function App() {
       <div className='flex w-full justify-center md:hidden lg:hidden xl:hidden'>
         <Form  />
       </div>
-      <Services/>
+      <Services setService={setService}/>
+      {service.show ? <ServiceModal serviceID={service.id} setService={setService} /> : null}
       <Works/>
       <Clients/>
       <WhyService/>

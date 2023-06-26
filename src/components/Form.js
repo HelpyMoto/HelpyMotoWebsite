@@ -3,6 +3,8 @@ import Logo from '../assets/Logo.png';
 import '../styles/navbar.css';
 import { motion, useAnimation } from 'framer-motion';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
+
 
 const variants = {
     hidden: { opacity: 0, scale: 0, x:"200%"},
@@ -13,6 +15,7 @@ const Form = () => {
   const [mechanicSelected, setMechanicSelected]= useState(true);
   const [cleanerSelected, setCleanerSelected]= useState(false);
   const [driverSelected, setDriverSelected]= useState(false);
+
   return (
     <motion.div variants={variants} initial="hidden" animate="visible">
        {/* <form
@@ -74,10 +77,11 @@ const Form = () => {
                     <input type='text' required='required' />
                     <span>Issue</span>
                   </div>
-
+                  <Link to="/service">
                   <div className='w-[250px] text-lg  text-center hover:scale-2 bg-red-500 text-white font-bold rounded-lg px-3 py-2 mt-1 mb-3 cursor-pointer'>
                     Hire a Mechanic
                   </div>
+                  </Link>
                   </form>
                   </motion.div>
                 </>
@@ -111,10 +115,11 @@ const Form = () => {
                     <input type='text' required='required' />
                     <span>Issue</span>
                   </div>
-
+                  <Link to="/service">
                   <div className='w-[250px] text-lg  text-center hover:scale-2 bg-red-500 text-white font-bold rounded-lg px-3 py-2 mt-1 mb-3 cursor-pointer'>
                     Hire a Cleaner
                   </div>
+                  </Link>
                 </form>
                 </motion.div>
                 
@@ -145,10 +150,13 @@ const Form = () => {
                     <input type='text' required='required' />
                     <span>Issue</span>
                   </div>
-
-                  <div className='w-[250px] text-lg  text-center hover:scale-2 bg-red-500 text-white font-bold rounded-lg px-3 py-2 mt-1 mb-3 cursor-pointer'>
+                  
+                  <Link to="/service">
+                  
+                  <div className='w-[250px] text-lg  text-center hover:scale-2 bg-red-500 text-white font-bold rounded-lg px-3 py-2 mt-1 mb-3 cursor-pointer' >
                     Hire a Driver
                   </div>
+                  </Link>
                   
               </form>
               </motion.div>

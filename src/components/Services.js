@@ -16,7 +16,7 @@ const Services = ({setService}) => {
       titleControl.start('hidden');
     }
   }, [titleControl, titleinView]);
-  console.log(serviceinView)
+
 
   useEffect(() => {
     if (titleinView) {

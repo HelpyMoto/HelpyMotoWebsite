@@ -64,7 +64,7 @@ function Service_Screen() {
     var mapboxMap = new mapboxgl.Map({
       container: node,
       accessToken:
-        'pk.eyJ1Ijoia2lubnlidXpvIiwiYSI6ImNsZ2RzaTQwZDBvY3QzZnA4dXdsd2g3djkifQ.Fjv_5plbOmFi_3-NLr2_jg',
+        'pk.eyJ1IjoiaGVscHltb3RvIiwiYSI6ImNsamNscHVuejAyOXAzZG1vNXppYnM1NzkifQ.BB9fpPJb9eDpRJkWwkRHXA',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [73.77293657871756, 18.65896735377518],
       zoom: 16,

@@ -7,6 +7,7 @@ import * as turf from '@turf/turf';
 import NavbarUpdate from '../components/NavbarUpdate';
 import ProviderInfo from '../components/ProviderInfo';
 import Footer from '../components/Footer';
+import LoadingPage from '../components/LoadingPage';
 
 function Service_Screen() {
   const {
@@ -160,13 +161,17 @@ function Service_Screen() {
   return (
     <div>
       {searching ? (
-        <div>
+        // <div>
         
-        <div className='flex w-full h-screen justify-center items-center text-xl font-semibold relative p-3 m-3'>
-          <p className='text-center mx-2'>Searching for Providers...</p>
-          <div className='absolute  animate-ping inline-flex h-[400px] w-[400px]  rounded-full bg-sky-400 opacity-75'></div>
-        </div>
-        </div>
+        // <div className='flex w-full h-screen justify-center items-center text-xl font-semibold relative p-3 m-3'>
+        //   <p className='text-center mx-2'>Searching for Providers...</p>
+        //   <div className='absolute  animate-ping inline-flex h-[400px] w-[400px]  rounded-full bg-sky-400 opacity-75'></div>
+       
+
+
+        // </div>
+        // </div>
+        <LoadingPage/>
       ) : (
         <div className='relative'>
           

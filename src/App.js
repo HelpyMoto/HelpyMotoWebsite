@@ -10,6 +10,7 @@ import Services from './components/Services';
 import WhyService from './components/WhyService';
 import Works from './components/Works';
 import ServiceModal from './components/ServiceModal';
+import LoadingPage from './components/LoadingPage';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <DownloadApp/>
       <Faq/>
       <Footer/>
+      <LoadingPage/>
     </div>
   );
 }

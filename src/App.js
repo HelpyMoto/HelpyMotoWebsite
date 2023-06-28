@@ -35,7 +35,7 @@ function App() {
       <DownloadApp/>
       <Faq/>
       <Footer/>
-      <LoadingPage/>
+    
     </div>
   );
 }

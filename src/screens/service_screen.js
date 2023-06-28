@@ -8,6 +8,8 @@ import NavbarUpdate from '../components/NavbarUpdate';
 import ProviderInfo from '../components/ProviderInfo';
 import Footer from '../components/Footer';
 import LoadingPage from '../components/LoadingPage';
+import Logo from '../assets/Logo.png';
+import { Link } from 'react-router-dom';
 
 function Service_Screen() {
   const {
@@ -20,7 +22,7 @@ function Service_Screen() {
   } = useService();
 
   const [screenSize, setScreenSize] = useState('');
-
+  const [menu, setMenu] = useState(false);
   const handleResize = () => {
     const width = window.innerWidth;
     if (width < 768) {
@@ -174,7 +176,120 @@ function Service_Screen() {
         <LoadingPage/>
       ) : (
         <div className='relative'>
-          
+          <div
+        className={
+          menu
+            ? 'flex flex-col w-full  backdrop-blur-lg text-black px-4 py-2'
+            : 'flex flex-col w-full bg-white backdrop-blur-lg text-black px-4 py-2'
+        }
+      >
+        {/* Logo and Slogan */}
+        <div className='flex items-center justify-between bg-transparent '>
+          <div className='flex space-x-3 items-center '>
+            <img
+              src={Logo}
+              alt='logo'
+              className='w-[80px] h-[50px] object-contain'
+            />
+            <p className='text-center font-semibold opacity-100'>For Unstoppable Journey</p>
+
+            {/* Rest buttons */}
+            <ul className=' w-full text-lg items-center hidden md:flex lg:flex xl:flex space-x-3'>
+              <li className='ml-3 nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px]  '>
+                <Link
+                  className='text-black hover:text-black hover:no-underline text-start font-semibold'
+                  to='/'
+                >
+                  Home
+                </Link>
+              </li>
+              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] '>
+                <Link
+                  className='text-black hover:text-black hover:no-underline text-start font-semibold'
+                  to='/'
+                >
+                  Services
+                </Link>
+              </li>
+              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] '>
+                <Link
+                  className='text-black hover:text-black hover:no-underline text-start font-semibold'
+                  to='/'
+                >
+                  HM Store
+                </Link>
+              </li>
+
+              <p className=' after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[100px]  '>
+                <Link
+                  className='text-black hover:text-black hover:no-underline text-start font-semibold'
+                  to='/'
+                >
+                  About Us
+                </Link>
+              </p>
+            </ul>
+          </div>
+          <div className='md:hidden lg:hidden xl:hidden  justify-end w-[35px]'>
+            <div
+              className='w-[35px] h-[25px] flex flex-col justify-between cursor-pointer'
+              onClick={() => setMenu(!menu)}
+            >
+              <div className='h-[3px] bg-black w-full'></div>
+              <div className='h-[3px] bg-black w-full'></div>
+              <div className='h-[3px] bg-black w-full'></div>
+            </div>
+            <div
+          className={
+            menu
+              ? ' z-40  duration-1000 ease-in-out transform transition'
+              : ' z-40 h-[0px] hidden duration-100000 ease-in-out transform transition'
+          }
+        >
+          <div className='flex w-full pb-1 justify-end'>
+            <ul className=' text-lg items-end flex flex-col '>
+              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] text-end '>
+                <Link
+                  className='text-black hover:text-white hover:no-underline text-end'
+                  to='/'
+                >
+                  Home
+                </Link>
+              </li>
+              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] text-end'>
+                <Link
+                  className='text-black hover:text-white hover:no-underline text-end'
+                  to='/'
+                >
+                  Services
+                </Link>
+              </li>
+              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] text-end'>
+                <Link
+                  className='text-black hover:text-white hover:no-underline text-end'
+                  to='/'
+                >
+                  HM Store
+                </Link>
+              </li>
+              <li className='nav-item after:transition-all after:duration-300 after:ease-in-out after:flex after:absolute after:w-0 after:hover:w-[85px] after:bg-red-500 after:h-[2px] -bottom-[2px] w-[85px] text-end'>
+                <Link
+                  className='text-black hover:text-white hover:no-underline text-end'
+                  to='/'
+                >
+                  About Us
+                </Link>
+              </li>
+
+             
+            </ul>
+          </div>
+        </div>
+          </div>
+        </div>
+        
+        </div>
+        
           <div
             ref={mapNode}
             style={{ height: screenSize=='Mobile' ? '60svh' : '100svh', width: '100%' }}

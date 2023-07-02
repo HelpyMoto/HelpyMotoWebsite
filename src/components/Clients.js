@@ -69,7 +69,7 @@ const Clients = () => {
           <motion.div ref={titleRef} variants={titleVariants}
         initial='hidden'
         animate={titleControl}>
-          <p className='font-semibold'>TESTIMONIALS</p>
+          <p className='font-semibold text-green-400'>TESTIMONIALS</p>
           <p className='text-4xl font-bold'>
             What Car Owners Say
           </p>
@@ -112,7 +112,7 @@ const Clients = () => {
                     </div>
                     
                   </div>
-                  <p>{card.disc}</p>
+                  <p className='text-green-500'>{card.disc}</p>
                   <div className='grid grid-cols-4 mt-8'>
                     <img
                       alt={card.name}

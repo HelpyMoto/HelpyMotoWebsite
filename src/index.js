@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './App.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoginPage from './components/LoginPage';
 import NewAccount from './components/NewAccount';
 import Service_Screen from './screens/service_screen';
+import OrderPage from './screens/OrderPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +18,7 @@ root.render(
       <Route path='/LoginPage' element={<LoginPage />} />
       <Route path='/Newaccount' element={<NewAccount />} />
       <Route path='/service' element={<Service_Screen />} />
+      <Route path='/order' element={<OrderPage />} />
     </Routes>
   </BrowserRouter>
 );

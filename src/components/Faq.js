@@ -22,11 +22,11 @@ export default function Faq() {
       {faq.map((item,index)=>{
         return(
             <>
-             <div key={index} className='bg-white flex w-auto h-20  mr-4 ml-4 pl-5 rounded-md border-grey  border-b-2 font-semibold items-center content-center justify-items-center hover:bg-gray-100 cursor-pointer' onClick={()=>openHandler(index)}>
+             <div key={index} className='bg-black text-white flex w-auto h-20  mr-4 ml-4 pl-5 rounded-md border-grey  border-b-2 font-semibold items-center content-center justify-items-center cursor-pointer' onClick={()=>openHandler(index)}>
            
             {item.title}
               </div>
-              <div className='flex bg-gray-100/40 rounded-br-lg rounded-bl-lg w-auto h-auto mb-4 py-4 pl-4 pr-4 mr-4 ml-4 shadow-sm text-justify' style={{display: open===index && isOpened===true? 'block' : 'none'}}>
+              <div className='flex bg-green-400 text-white rounded-br-lg rounded-bl-lg w-auto h-auto mb-4 py-4 pl-4 pr-4 mr-4 ml-4 shadow-sm text-justify text-green-500' style={{display: open===index && isOpened===true? 'block' : 'none'}}>
               {item.description}
               </div>
             </>

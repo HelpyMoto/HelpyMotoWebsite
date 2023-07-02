@@ -40,24 +40,24 @@ const Works = () => {
       <div className='lg:row-start-1 lg:row-span-3 bg-white px-3 py-3   flex justify-center items-center flex-col text-black rounded-md m-4 justify-center shadow-gray-400 shadow-lg mx-auto w-[250px]' ref={step1}>
         <img src="https://gomechprod.blob.core.windows.net/websiteasset/New%20Website/components/Homepage/Select-The-Perfect-Car-Service.png" alt="" className='w-2/3 object-contain' />
         <div className='flex flex-col w-full '>
-        <p className='text-start text-lg font-semibold'>Select the Perfect Car Service</p>
-        <p className='text-start text-sm'>From HelpyMoto's broad portfolio of services.</p>
+        <p className='text-start text-lg font-semibold text-green-400'>Select the Perfect Car Service</p>
+        <p className='text-start text-sm text-black-600'>From HelpyMoto's broad portfolio of services.</p>
         </div>
        
       </div>
       <div className='lg:row-start-2 lg:row-span-3 bg-white px-3 py-3  flex justify-center items-center flex-col text-black rounded-md m-4 justify-center shadow-gray-400 shadow-lg mx-auto w-[250px]' ref={step2}>
         <img src="https://gomechprod.blob.core.windows.net/websiteasset/New%20Website/components/Homepage/Schedule-Free-Doorstep-Pick-up.png" alt="" className='w-2/3 object-contain' />
         <div className='flex flex-col w-full '>
-        <p className='text-start text-lg font-semibold'>Schedule a Free Doorstep Pick-up</p>
-        <p className='text-start text-sm'>We offer free pick up and drop for all services booked</p>
+        <p className='text-start text-lg font-semibold text-green-400'>Schedule a Free Doorstep Pick-up</p>
+        <p className='text-start text-sm text-black-600'>We offer free pick up and drop for all services booked</p>
         </div>
         
       </div>
       <div className='lg:row-start-1 lg:row-span-3 bg-white px-3 py-3 flex justify-center items-center flex-col text-black rounded-md m-4 justify-center shadow-gray-400 shadow-lg mx-auto w-[250px]' ref={step3}>
         <img src="https://gomechprod.blob.core.windows.net/websiteasset/New%20Website/components/Homepage/track-your-car-service-real-time.png" alt="" className='w-2/3 object-contain' />
         <div className='flex flex-col w-full '>
-        <p className='text-start text-lg font-semibold'>Track your car service Real-Time</p>
-        <p className='text-start text-sm'>We will take care of everything from here!</p>
+        <p className='text-start text-lg font-semibold text-green-400'>Track your car service Real-Time</p>
+        <p className='text-start text-sm text-black-600'>We will take care of everything from here!</p>
         </div>
         
       </div>

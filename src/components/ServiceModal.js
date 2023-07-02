@@ -4,13 +4,13 @@ import servicesData from '../data/Data';
 
 const ServiceModal = ({ serviceID, setService }) => {
   return (
-    <div className=' fixed top-0 right-0 left-0 z-[400] w-full  p-4 font-bold text-center flex justify-center items-center' style={{height:"100svh"}} >
+    <div className=' fixed top-0 right-0 left-0 z-[400] w-full p-4 font-bold text-center flex justify-center items-center' style={{height:"100svh"}} >
         <div onClick={() => setService({show:false, id:null})} className='fixed top-0 right-0 left-0 flex w-full h-full bg-black/30'>
 
 </div>
         <div class="relative w-full md:w-1/2 lg:w-1/2 h-full flex justify-center  ">
         
-        <div class="relative  rounded-lg shadow bg-white w-full h-full flex flex-col justify-between">
+        <div class="relative rounded-lg shadow bg-white w-full h-full flex flex-col justify-between">
          
             <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                 <h3 class="text-xl font-semibold ">

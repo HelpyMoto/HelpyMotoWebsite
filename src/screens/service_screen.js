@@ -10,6 +10,11 @@ import Footer from '../components/Footer';
 import LoadingPage from '../components/LoadingPage';
 import Logo from '../assets/Logo.png';
 import { Link } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+//import MapboxDirections from '@mapbox/mapbox-gl-directions';
+import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions'
+import '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css';
+
 
 function Service_Screen() {
   const {
@@ -80,16 +85,22 @@ function Service_Screen() {
 
     mapboxMap &&
       mapboxMap.on('load', () => {
-        new mapboxgl.Marker({
+
+        const fromMarker = new mapboxgl.Marker({
           anchor: 'center',
           scale: 1.2,
           color: '#18f98f',
           draggable: false,
+          
         })
           .setLngLat(fromCoordinates)
+          .setPopup(
+            new mapboxgl.Popup().setHTML('<p>From Marker</p>')
+          )
           .addTo(mapboxMap);
+      
 
-        new mapboxgl.Marker({
+          const toMarker = new mapboxgl.Marker({
           anchor: 'center',
           scale: 1.2,
           color: '#1c5fcce0',
@@ -97,6 +108,55 @@ function Service_Screen() {
         })
           .setLngLat(toCoordinates)
           .addTo(mapboxMap);
+        
+
+        // Initialize the Mapbox Directions control
+    const directions = new MapboxDirections({
+      accessToken: 'pk.eyJ1IjoiaGVscHltb3RvIiwiYSI6ImNsamNscHVuejAyOXAzZG1vNXppYnM1NzkifQ.BB9fpPJb9eDpRJkWwkRHXA',
+      unit: 'metric',
+      profile: 'mapbox/driving',
+      controls: { inputs: false }, // Hide the default input controls
+    });
+
+    // Add the Directions control to the map
+    mapboxMap.addControl(directions, 'top-left');
+
+    
+
+     // Event listener for the 'route' event fired when the route is updated
+     directions.on('route', (event) => {
+      const route = event.route[0];
+      if (route) {
+        const { duration, distance } = route;
+        const estimatedTimeOfArrival = duration / 60; // Convert to minutes
+        console.log('ETA:', estimatedTimeOfArrival);
+        // Use the ETA as needed in your application
+      }
+    });
+
+          /* 
+          const fromIcon = document.createElement('div');
+          fromIcon.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <!-- SVG path or other elements representing the mechanic shop icon -->
+              <path fill="red" d="M12 2L2 12h3v8h14v-8h3L12 2z" />
+            </svg>
+          `;
+        
+
+          const toIcon = document.createElement('div');
+          toIcon.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <!-- SVG path or other elements representing the user home icon -->
+              <path fill="blue" d="M12 2L2 12h3v9h14v-9h3L12 2z" />
+            </svg>
+          `;
+         
+  
+          // Set the custom icon elements as markers' HTML
+          fromMarker.getElement().appendChild(fromIcon);
+          toMarker.getElement().appendChild(toIcon);
+          */
 
         const midpoint = turf.midpoint(fromCoordinates, toCoordinates);
         const distance = turf.distance(fromCoordinates, toCoordinates, {
@@ -146,10 +206,7 @@ function Service_Screen() {
           new mapboxgl.LngLatBounds()
         );
         mapboxMap.fitBounds(bounds, { padding: {top:screenSize=='Mobile'?60:120, bottom:screenSize=='Mobile'?60:120} });
-
-        
       });
-
     
 
     // save the map object to React.useState
@@ -296,7 +353,8 @@ function Service_Screen() {
             className=' flex flex-col overflow-hidden  top-0 left-0 relative'
           >
             <ProviderInfo providerData={providerDetails} otp={otp} screen='large'/>
-            
+           
+
           </div>
           <ProviderInfo providerData={providerDetails} otp={otp} screen='small' />
           <Footer/> 

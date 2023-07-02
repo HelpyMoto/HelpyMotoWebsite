@@ -9,7 +9,7 @@ const DownloadApp = () => {
                 <img src="mobile.jpeg" alt="" className='rounded-2xl' />
             </div>
             <div className='md:col-span-2 lg:col-span-2 col-span-4 flex flex-col items-center justify-evenly'>
-                <p className='text-lg text-center w-2/3'>Choose and book a seamless car service experience and get upto Rs 750 off with the HelpyMoto App</p>
+                <p className='text-lg text-center w-2/3 text-green-400'>Choose and book a seamless car service experience and get upto Rs 750 off with the HelpyMoto App</p>
 
                 <div className='grid grid-cols-2'>
                     <div className='cursor-pointer'>

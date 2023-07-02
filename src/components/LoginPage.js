@@ -15,13 +15,13 @@ const LoginPage = () => {
 
   const isOtpFilled = otp.length === 6;
 
-  const gauth = async () => {
+  const gauth = () => {
 
+    /*window.open('https://service-provider-apis.onrender.com/api/v1/user/auth/google/', "_self")*/
     window.open('https://service-provider-apis.onrender.com/api/v1/user/auth/google', "_self")
 
-   // const resp = await axios.get('https://service-provider-apis.onrender.com/api/v1/user/auth/google/callback')
+   //const resp = await axios.get('https://service-provider-apis.onrender.com/api/v1/user/auth/google/callback')
     //console.log(resp.data)
-
   }
 
   return (

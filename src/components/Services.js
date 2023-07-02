@@ -69,8 +69,7 @@ const Services = ({setService}) => {
               >
                 <div className='shadow-lg hover:scale-105 transition transform duration-200 ease-in-out w-[130px] md:w-[200px] lg:w-[300px] md:h-[200px] lg:h-[200px] h-[130px] md:w-[200px] lg:w-[200px] md:h-[200px] lg:h-[300px] rounded-md bg-gray-200 p-3 flex justify-center items-center flex-col cursor-pointer' onClick={() => setService({show: true, id:val.id})}>
 
-                
-                
+              
                 <img src={val.image} alt='' className='w-2/3 object-contain' />
                 <p className='md:text-xl lg:text-xl font-sans font-semibold text-center'>
                   {val.name}

@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <div>
       <div className='bg-black flex w-full justify-center md:justify-between lg:justify-between text-white px-4 py-3 items-center'>
-        <p className='text-lg hidden md:block lg:block'>
+        <p className='text-lg hidden md:block lg:block text-green-500'>
           Get connected with us on our socials!
         </p>
         <div className='flex space-x-3'>

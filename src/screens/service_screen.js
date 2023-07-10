@@ -115,13 +115,13 @@ function Service_Screen() {
       accessToken: 'pk.eyJ1IjoiaGVscHltb3RvIiwiYSI6ImNsamNscHVuejAyOXAzZG1vNXppYnM1NzkifQ.BB9fpPJb9eDpRJkWwkRHXA',
       unit: 'metric',
       profile: 'mapbox/driving',
-      controls: { inputs: false }, // Hide the default input controls
-      alternatives: false, //Disable route alternatives
-      interactive: false, //Disable interactive route selection
+      controls: false, 
+      alternatives:false,
+      interactive:false,
     });
 
     // Add the Directions control to the map
-    mapboxMap.addControl(directions, 'top-left');
+    mapboxMap.addControl(directions)
  
    
     // Get ETA between the two points

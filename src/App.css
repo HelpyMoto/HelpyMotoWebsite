@@ -47,7 +47,9 @@
 }
 
 /*
-.mapboxgl-directions-destination, .mapboxgl-directions-origin{
+.mapboxgl-directions-destination,
+.mapboxgl-directions-origin,.mapboxgl-directions-control{
   display: none !important;
 }
 */
+

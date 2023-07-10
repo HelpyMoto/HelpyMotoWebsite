@@ -341,7 +341,7 @@ function Service_Screen() {
             
 
           </div>
-          <ProviderInfo providerData={providerDetails} otp={otp} screen='small' />
+          <ProviderInfo providerData={providerDetails} otp={otp} eta={eta} screen='small' />
           <Footer/> 
           
         </div>

@@ -3,7 +3,7 @@ import {BiStar} from 'react-icons/bi'
 import { FaPhone } from 'react-icons/fa';
 
 
-const ProviderInfo = ({providerData, otp, screen}) => {
+const ProviderInfo = ({providerData, otp, eta, screen}) => {
   return (
     <div className={screen=='large' ? 'bg-white px-4 py-4 shadow-lg  md:flex lg:flex xl:flex flex-col z-[200] hidden  lg:absolute xl:absolute md:absolute md:top-1/2 md:right-4 md:transform md:-translate-y-1/2 lg:top-1/2 lg:right-4 lg:transform lg:-translate-y-1/2  xl:top-1/2 xl:right-4 xl:transform xl:-translate-y-1/2' : 'bg-white px-4 py-4  flex flex-col z-[200]   lg:hidden xl:hidden md:hidden md:top-1/2 md:right-4 md:transform md:-translate-y-1/2 lg:top-1/2 lg:right-4 lg:transform lg:-translate-y-1/2  xl:top-1/2 xl:right-4 xl:transform xl:-translate-y-1/2 shadow-inner rounded-tl-xl rounded-tr-xl '}>
         <p className='text-xl font-semibold font-sans text-center '>Provider Booked!</p>
@@ -27,9 +27,12 @@ const ProviderInfo = ({providerData, otp, screen}) => {
         </div>
 
         {/* OTP */}
-        <p className='text-lg text-center font-bold mb-4 '>
+        <p className='text-lg text-center font-bold mb-4'>
             OTP: <span className='px-3 py-1 bg-[#18f98f]/80 text-white font-semibold rounded-lg text-lg'>{otp}</span>
         </p>
+
+        {eta && <p className='text-lg text-center font-bold mb-4'>ETA: {eta} minutes</p>}
+         
 
 
         {/* Mim contact no. */}

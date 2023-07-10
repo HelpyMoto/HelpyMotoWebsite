@@ -15,7 +15,6 @@ import ReactDOM from 'react-dom';
 import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions'
 import '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css';
 
-
 function Service_Screen() {
   const {
     searching,
@@ -28,6 +27,7 @@ function Service_Screen() {
 
   const [screenSize, setScreenSize] = useState('');
   const [menu, setMenu] = useState(false);
+  const[eta,setEta] = useState('');
   const handleResize = () => {
     const width = window.innerWidth;
     if (width < 768) {
@@ -83,24 +83,24 @@ function Service_Screen() {
         duration: 1000,
     })
 
+    
+
     mapboxMap &&
       mapboxMap.on('load', () => {
 
-        const fromMarker = new mapboxgl.Marker({
+        new mapboxgl.Marker({
           anchor: 'center',
           scale: 1.2,
           color: '#18f98f',
           draggable: false,
+         
           
         })
           .setLngLat(fromCoordinates)
-          .setPopup(
-            new mapboxgl.Popup().setHTML('<p>From Marker</p>')
-          )
           .addTo(mapboxMap);
       
 
-          const toMarker = new mapboxgl.Marker({
+         new mapboxgl.Marker({
           anchor: 'center',
           scale: 1.2,
           color: '#1c5fcce0',
@@ -116,47 +116,32 @@ function Service_Screen() {
       unit: 'metric',
       profile: 'mapbox/driving',
       controls: { inputs: false }, // Hide the default input controls
+      alternatives: false, //Disable route alternatives
+      interactive: false, //Disable interactive route selection
     });
 
     // Add the Directions control to the map
     mapboxMap.addControl(directions, 'top-left');
-
-    
+ 
+   
+    // Get ETA between the two points
+    directions.setOrigin(fromCoordinates);
+    directions.setDestination(toCoordinates);
 
      // Event listener for the 'route' event fired when the route is updated
      directions.on('route', (event) => {
       const route = event.route[0];
       if (route) {
-        const { duration, distance } = route;
+        const { duration } = route;
         const estimatedTimeOfArrival = duration / 60; // Convert to minutes
         console.log('ETA:', estimatedTimeOfArrival);
-        // Use the ETA as needed in your application
+        setEta(estimatedTimeOfArrival.toFixed(2));
+
       }
     });
 
-          /* 
-          const fromIcon = document.createElement('div');
-          fromIcon.innerHTML = `
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-              <!-- SVG path or other elements representing the mechanic shop icon -->
-              <path fill="red" d="M12 2L2 12h3v8h14v-8h3L12 2z" />
-            </svg>
-          `;
-        
-
-          const toIcon = document.createElement('div');
-          toIcon.innerHTML = `
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-              <!-- SVG path or other elements representing the user home icon -->
-              <path fill="blue" d="M12 2L2 12h3v9h14v-9h3L12 2z" />
-            </svg>
-          `;
-         
+          
   
-          // Set the custom icon elements as markers' HTML
-          fromMarker.getElement().appendChild(fromIcon);
-          toMarker.getElement().appendChild(toIcon);
-          */
 
         const midpoint = turf.midpoint(fromCoordinates, toCoordinates);
         const distance = turf.distance(fromCoordinates, toCoordinates, {
@@ -352,8 +337,8 @@ function Service_Screen() {
             style={{ height: screenSize=='Mobile' ? '60svh' : '100svh', width: '100%' }}
             className=' flex flex-col overflow-hidden  top-0 left-0 relative'
           >
-            <ProviderInfo providerData={providerDetails} otp={otp} screen='large'/>
-           
+            <ProviderInfo providerData={providerDetails} otp={otp} eta={eta} screen='large'/>
+            
 
           </div>
           <ProviderInfo providerData={providerDetails} otp={otp} screen='small' />

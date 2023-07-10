@@ -45,3 +45,9 @@
 .bg-pay-now{
   background-color: #10C500;
 }
+
+/*
+.mapboxgl-directions-destination, .mapboxgl-directions-origin{
+  display: none !important;
+}
+*/

@@ -20,10 +20,21 @@ const OrderPage = () => {
 
 
         <div className="flex space-x-4 mb-4">
-          <button className="bg-on-time-color text-black py-2 px-8 w-192 h-53 rounded-lg rounded-15 border border-black">On-Time</button>
-          <button className="bg-white text-black py-2 px-8 w-192 h-53 rounded-lg rounded-15 border border-black">Scheduled</button>
+          <button className="bg-on-time-color text-black py-2 px-8 w-192 h-53 rounded-lg rounded-15 shadow-lg relative">
+            On-Time
+            <span className="bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2">
+             2
+          </span>
+            </button>
+          <button className="bg-white text-black py-2 px-8 w-192 h-53 rounded-lg rounded-15 shadow-lg relative">
+            Scheduled
+          <span className="bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2">
+             1
+          </span>
+            </button>
         </div>
-
+         
+        <p className="text-xl font-semibold mb-4">Ongoing services</p>
 
         <div className="flex flex-col flex-wrap gap-4">
           <div className="bg-white rounded-lg shadow-lg p-4 flex items-center space-x-4 w-full md:w-1/2">
